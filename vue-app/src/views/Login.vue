@@ -1,6 +1,6 @@
 <template>
     <v-app>
-        <v-main class="bg-loginBg bg-cover bg-no-repeat bg-center" id="loginBg">
+        <v-main id="loginBg">
             
         </v-main>
     </v-app>
@@ -8,5 +8,8 @@
 <style>
 #loginBg{
     background-image: url('../assets/christmas_1920_1200.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 </style>
