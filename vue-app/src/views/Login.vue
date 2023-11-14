@@ -11,7 +11,7 @@
             >
                 <v-img
                   :width="150"
-                  aspect-ratio="0.72"
+                  aspect-ratio="1.37"
                   cover
                   src="../src/assets/login_img.png"
                 ></v-img>
