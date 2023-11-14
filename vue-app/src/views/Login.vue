@@ -3,11 +3,17 @@
         <v-main id="login_main">
             <v-sheet
               :elevation="6" 
-              :height="200" 
-              :width="200"
+              :height="500" 
+              :width="400"
               rounded
-              style="background:rgba(255, 255, 255, 0.37);"
+              style="background:rgba(255, 255, 255, 0.7);"
             >
+                <v-img
+                :width="300"
+                aspect-ratio="16/9"
+                cover
+                src="../assets/login_img.png"
+                ></v-img>
             </v-sheet>
         </v-main>
     </v-app>
