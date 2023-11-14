@@ -7,7 +7,7 @@ up:
 stop:
 	docker-compose stop
 run:
-	docker exec -it $(CONTAINER) sh -c "npm i && npm run dev"
+	docker exec -it $(CONTAINER) sh -c "npm i --legacy-peer-deps && npm run dev"
 build:
 	docker exec -it $(CONTAINER) sh -c "npm run build"
 p:
