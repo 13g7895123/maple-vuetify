@@ -9,10 +9,10 @@
               style="background:rgba(255, 255, 255, 0.7);"
             >
                 <v-img
-                :width="300"
-                aspect-ratio="16/9"
-                cover
-                src="../src/assets/login_img.png"
+                  :width="300"
+                  aspect-ratio="16/9"
+                  cover
+                  src="../src/assets/login_img.png"
                 ></v-img>
             </v-sheet>
         </v-main>
