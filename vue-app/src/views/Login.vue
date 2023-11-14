@@ -12,12 +12,15 @@
                 <v-form @submit.prevent>
                     <v-img
                     cover
-                    :height="200"
+                    :height="180"
                     src="../src/assets/login_img.png"
                     class="mt-5"
                     ></v-img>
                     <v-text-field
-                        label="First name"
+                        label="Account"
+                    ></v-text-field>
+                    <v-text-field
+                        label="Password"
                     ></v-text-field>
                     <v-btn type="submit" block class="mt-2">Submit</v-btn>
                 </v-form>
