@@ -7,10 +7,10 @@
               :width="400"
               rounded
               style="background:rgba(255, 255, 255, 0.7);"
+              class="d-flex flex-column align-center"
             >
                 <v-img
-                  :width="300"
-                  aspect-ratio="16/9"
+                  :width="150"
                   cover
                   src="../src/assets/login_img.png"
                 ></v-img>
