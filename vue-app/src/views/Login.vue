@@ -12,7 +12,7 @@
                 <v-form @submit.prevent>
                     <v-img
                     cover
-                    :height="150"
+                    :height="200"
                     src="../src/assets/login_img.png"
                     class="mt-5"
                     ></v-img>
