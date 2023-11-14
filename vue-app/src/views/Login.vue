@@ -1,7 +1,7 @@
 <template>
     <v-app>
         <v-main id="loginBg">
-            
+            <v-sheet :elevation="6" :height="200" :width="200"></v-sheet>
         </v-main>
     </v-app>
 </template>
