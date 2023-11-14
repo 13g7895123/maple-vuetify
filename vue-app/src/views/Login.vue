@@ -11,8 +11,9 @@
             >
                 <v-img
                   cover
+                  :width="150"
+                  :height="150"
                   src="../src/assets/login_img.png"
-                  style="width: 150px; height: auto; object-fit: contain;"
                 ></v-img>
             </v-sheet>
         </v-main>
