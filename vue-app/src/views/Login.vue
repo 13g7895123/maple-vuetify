@@ -14,6 +14,7 @@
                     cover
                     :height="150"
                     src="../src/assets/login_img.png"
+                    class="mt-5"
                     ></v-img>
                     <v-text-field
                         label="First name"
