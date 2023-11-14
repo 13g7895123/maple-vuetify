@@ -5,7 +5,7 @@ services:
     container_name: ass-vuetify
     entrypoint: /bin/sh
     ports:
-      - 9053:8000
+      - 9056:8000
     working_dir: /srv/app
     volumes:
       - type: bind
