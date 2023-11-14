@@ -6,6 +6,9 @@
     </v-app>
 </template>
 <style>
+html{
+    overflow-y: auto;
+}
 #loginBg{
     background-image: url('../assets/christmas_1920_1200.jpg');
     background-size: cover;
