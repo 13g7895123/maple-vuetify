@@ -11,9 +11,9 @@
             >
                 <v-img
                   :width="150"
+                  aspect-ratio="0.72"
                   cover
                   src="../src/assets/login_img.png"
-                  style="height: auto;"
                 ></v-img>
             </v-sheet>
         </v-main>
