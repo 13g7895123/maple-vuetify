@@ -1,6 +1,6 @@
 <template>
     <v-app>
-        <v-main class="bg-loginBg bg-cover bg-no-repeat bg-center" style="background-image: '../assets/christmas_1920_1200.jpg';">
+        <v-main class="mt-4 bg-loginBg bg-cover bg-no-repeat bg-center">
             
         </v-main>
     </v-app>
