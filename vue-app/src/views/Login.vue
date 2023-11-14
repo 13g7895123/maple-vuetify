@@ -24,6 +24,8 @@
                     ></v-text-field>
                     <v-btn type="submit" block class="mt-2">Submit</v-btn>
                 </v-form>
+                <v-text label="or login with"></v-text>
+                
             </v-sheet>
         </v-main>
     </v-app>
