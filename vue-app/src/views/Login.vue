@@ -12,7 +12,7 @@
                 :width="300"
                 aspect-ratio="16/9"
                 cover
-                src="../assets/login_img.png"
+                src="../src/assets/login_img.png"
                 ></v-img>
             </v-sheet>
         </v-main>
