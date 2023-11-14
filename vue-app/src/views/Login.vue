@@ -9,11 +9,10 @@
               style="background:rgba(255, 255, 255, 0.7);"
               class="d-flex flex-column align-center"
             >
-                
                 <v-form @submit.prevent>
                     <v-img
                     cover
-                    :height="10"
+                    :height="150"
                     src="../src/assets/login_img.png"
                     ></v-img>
                     <v-text-field
