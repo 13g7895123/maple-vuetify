@@ -10,10 +10,9 @@
               class="d-flex flex-column align-center"
             >
                 <v-img
-                  :width="150"
-                  aspect-ratio="1.37"
                   cover
                   src="../src/assets/login_img.png"
+                  style="width: 150px; height: auto; object-fit: contain;"
                 ></v-img>
             </v-sheet>
         </v-main>
