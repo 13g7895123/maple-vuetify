@@ -10,7 +10,8 @@
               class="d-flex flex-column align-center"
             >
                 <v-img
-                  :height="150"
+                  :width="150"
+                  :height="auto"
                   cover
                   src="../src/assets/login_img.png"
                 ></v-img>
