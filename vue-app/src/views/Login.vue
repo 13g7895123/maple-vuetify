@@ -17,7 +17,7 @@
                         :height="180"
                         src="../src/assets/login_img.png"
                         class="mt-5"
-                        style="width: auto;"
+                        style="width: auto !important;"
                     ></v-img>
                     <v-text-field
                         label="Account"
