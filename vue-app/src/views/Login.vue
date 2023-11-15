@@ -33,6 +33,7 @@
                     >LOGIN</v-btn>
                     <v-divider
                         :thickness="2"
+                        color="black"
                     ></v-divider>
                     <v-btn type="button" 
                         class="mt-2"
