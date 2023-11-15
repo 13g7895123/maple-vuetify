@@ -3,7 +3,6 @@
         <v-main id="login_main">
             <v-sheet
             :elevation="6" 
-            :height="500" 
             :width="400"
             rounded
             style="background:rgba(255, 255, 255, 0.7);"
