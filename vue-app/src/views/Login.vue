@@ -31,6 +31,10 @@
                         class="mt-2"
                         style="width: 70%;"
                     >LOGIN</v-btn>
+                    <!-- divider -->
+                    <div class="relative d-flex" style="width: 70%;">
+                        <div class="divider-line" style="width: 100%; height: 1px background-color: #555;;"></div>
+                    </div>
                     <div 
                         class="d-flex justify-space-between"
                         style="width: 70%;"
