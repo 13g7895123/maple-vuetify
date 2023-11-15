@@ -13,19 +13,24 @@
                 class="d-flex flex-column align-center"
                 >
                     <v-img
-                    cover
-                    :height="180"
-                    src="../src/assets/login_img.png"
-                    class="mt-5"
+                        cover
+                        :height="180"
+                        src="../src/assets/login_img.png"
+                        class="mt-5"
                     ></v-img>
                     <v-text-field
                         label="Account"
+                        class="mt-3"
                         style="width: 70%;"
                     ></v-text-field>
                     <v-text-field
                         label="Password"
+                        style="width: 70%;"
                     ></v-text-field>
-                    <v-btn type="submit" block class="mt-2">Submit</v-btn>
+                    <v-btn type="submit" block 
+                        class="mt-2"
+                        style="width: 70%;"
+                    >Submit</v-btn>
                 </v-form>
                 <v-text label="or login with"></v-text>
                 
