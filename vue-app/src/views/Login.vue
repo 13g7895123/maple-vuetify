@@ -50,7 +50,8 @@
                         <v-btn 
                             type="button" 
                             class="mt-2"
-                            style="width: 45%;"
+                            style="width: 45%; color:#fff;"
+                            color="#05c654"
                         >Line</v-btn>
                     </div>
                 </v-form>                
