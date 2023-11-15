@@ -35,15 +35,22 @@
                         :thickness="2"
                         color="black"
                     ></v-divider>
-                    <v-btn type="button" 
-                        class="mt-2"
+                    <div 
+                        class="d-flex"
                         style="width: 70%;"
-                        pre-icon="mdi-plus-circle-outline"
-                    >Google</v-btn>
-                    <v-btn type="button" 
-                        class="mt-2"
-                        style="width: 70%;"
-                    >Line</v-btn>
+                    >
+                        <v-btn 
+                            type="button" 
+                            class="mt-2"
+                            style="width: 45%;"
+                            pre-icon="mdi-plus-circle-outline"
+                        >Google</v-btn>
+                        <v-btn 
+                            type="button" 
+                            class="mt-2"
+                            style="width: 45%;"
+                        >Line</v-btn>
+                    </div>
                 </v-form>
                 <v-text label="or login with"></v-text>
                 
