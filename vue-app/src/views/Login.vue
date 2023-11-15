@@ -20,6 +20,7 @@
                     ></v-img>
                     <v-text-field
                         label="Account"
+                        :width="70%"
                     ></v-text-field>
                     <v-text-field
                         label="Password"
