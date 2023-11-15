@@ -16,8 +16,7 @@
                         cover
                         :height="180"
                         src="../src/assets/login_img.png"
-                        class="mt-5"
-                        style="width: auto !important;"
+                        class="mt-5 d-flex justify-center"
                     ></v-img>
                     <v-text-field
                         label="Account"
