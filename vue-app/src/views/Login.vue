@@ -80,4 +80,7 @@ html{
   width: 100%;
   background-color: #555;  /* 设置横线颜色 */
 }
+.v-img__img{
+    width: auto;
+}
 </style>
