@@ -45,7 +45,7 @@
                             type="button" 
                             class="mt-2"
                             style="width: 45%;"
-                            pre-icon="mdi-plus-circle-outline"
+                            color="#d34f41"
                         >Google</v-btn>
                         <v-btn 
                             type="button" 
