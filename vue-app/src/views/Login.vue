@@ -20,6 +20,7 @@
                     ></v-img>
                     <v-text-field
                         label="Account"
+                        height="30px"
                         class="mt-3"
                         style="width: 70%;"
                     ></v-text-field>
