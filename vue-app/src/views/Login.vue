@@ -30,7 +30,15 @@
                     <v-btn type="submit" 
                         class="mt-2"
                         style="width: 70%;"
-                    >Submit</v-btn>
+                    >LOGIN</v-btn>
+                    <v-btn type="button" 
+                        class="mt-2"
+                        style="width: 70%;"
+                    >Google</v-btn>
+                    <v-btn type="button" 
+                        class="mt-2"
+                        style="width: 70%;"
+                    >Line</v-btn>
                 </v-form>
                 <v-text label="or login with"></v-text>
                 
