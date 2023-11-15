@@ -35,7 +35,7 @@
                     <v-btn type="button" 
                         class="mt-2"
                         style="width: 70%;"
-                        pre-icon="mdi-google"
+                        pre-icon="mdi-plus-circle-outline"
                     >Google</v-btn>
                     <v-btn type="button" 
                         class="mt-2"
