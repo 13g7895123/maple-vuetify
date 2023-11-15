@@ -31,16 +31,6 @@
                         class="mt-2"
                         style="width: 70%;"
                     >LOGIN</v-btn>
-                    <v-row align="center" style="width: 70%;">
-                        <span class="divider-line"></span>
-                        <!-- <v-col>
-                            <div class="divider-with-text">
-                                <span class="divider-line"></span>
-                                <span class="divider-text">or login with</span>
-                                <span class="divider-line"></span>
-                            </div>
-                        </v-col> -->
-                    </v-row>
                     <div 
                         class="d-flex justify-space-between"
                         style="width: 70%;"
