@@ -10,13 +10,14 @@
             >
                 <v-form 
                 @submit.prevent
-                class="d-flex flex-column align-center"
+                class="d-flex flex-column align-center justify-center"
                 >
                     <v-img
                         cover
                         :height="180"
                         src="../src/assets/login_img.png"
                         class="mt-5"
+                        style="width: auto;"
                     ></v-img>
                     <v-text-field
                         label="Account"
