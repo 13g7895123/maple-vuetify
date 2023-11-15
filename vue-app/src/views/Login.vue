@@ -27,7 +27,7 @@
                         label="Password"
                         style="width: 70%;"
                     ></v-text-field>
-                    <v-btn type="submit" block 
+                    <v-btn type="submit" 
                         class="mt-2"
                         style="width: 70%;"
                     >Submit</v-btn>
