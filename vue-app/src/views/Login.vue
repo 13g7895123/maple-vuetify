@@ -31,12 +31,12 @@
                         class="mt-2"
                         style="width: 70%;"
                     >LOGIN</v-btn>
-                    <v-row align="center">
+                    <v-row align="center" style="width: 70%;">
                         <v-col>
                             <div class="divider-with-text">
-                            <span class="divider-line"></span>
-                            <span class="divider-text">or login with</span>
-                            <span class="divider-line"></span>
+                                <span class="divider-line"></span>
+                                <span class="divider-text">or login with</span>
+                                <span class="divider-line"></span>
                             </div>
                         </v-col>
                     </v-row>
@@ -83,6 +83,7 @@ html{
 .divider-line {
   flex-grow: 1;
   height: 1px;
+  width: 100%;
   background-color: #000;  /* 设置横线颜色 */
   margin: 0 10px;  /* 设置横线与文字之间的间距 */
 }
