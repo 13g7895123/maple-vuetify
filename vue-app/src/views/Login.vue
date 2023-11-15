@@ -7,11 +7,10 @@
             :width="400"
             rounded
             style="background:rgba(255, 255, 255, 0.7);"
-            class="d-flex flex-column align-center"
             >
                 <v-form 
                 @submit.prevent
-                style="width: 100%;"
+                class="d-flex flex-column align-center"
                 >
                     <v-img
                     cover
