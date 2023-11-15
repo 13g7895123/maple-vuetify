@@ -31,7 +31,9 @@
                         class="mt-2"
                         style="width: 70%;"
                     >LOGIN</v-btn>
-                    <v-divider></v-divider>
+                    <v-divider
+                        :thickness="2"
+                    ></v-divider>
                     <v-btn type="button" 
                         class="mt-2"
                         style="width: 70%;"
