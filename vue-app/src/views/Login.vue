@@ -2,14 +2,17 @@
     <v-app>
         <v-main id="login_main">
             <v-sheet
-              :elevation="6" 
-              :height="500" 
-              :width="400"
-              rounded
-              style="background:rgba(255, 255, 255, 0.7);"
-              class="d-flex flex-column align-center"
+            :elevation="6" 
+            :height="500" 
+            :width="400"
+            rounded
+            style="background:rgba(255, 255, 255, 0.7);"
+            class="d-flex flex-column align-center"
             >
-                <v-form @submit.prevent>
+                <v-form 
+                @submit.prevent
+                style="width: 100%;"
+                >
                     <v-img
                     cover
                     :height="180"
