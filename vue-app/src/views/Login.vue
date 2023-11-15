@@ -6,7 +6,7 @@
             :width="400"
             :height="540"
             rounded
-            style="background:rgba(255, 255, 255, 0.7);"
+            style="background:rgba(255, 255, 255, 0.9);"
             >
                 <v-form 
                 @submit.prevent
