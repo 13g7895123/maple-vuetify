@@ -4,6 +4,7 @@
             <v-sheet
             :elevation="6" 
             :width="400"
+            :height="540"
             rounded
             style="background:rgba(255, 255, 255, 0.7);"
             >
@@ -30,6 +31,7 @@
                         class="mt-2"
                         style="width: 70%;"
                     >LOGIN</v-btn>
+                    <v-divider inset></v-divider>
                     <v-btn type="button" 
                         class="mt-2"
                         style="width: 70%;"
