@@ -31,16 +31,11 @@
                         class="mt-2"
                         style="width: 70%;"
                     >LOGIN</v-btn>
-                    <!-- <v-divider
-                        :thickness="2"
-                        color="black"
-                        style=""
-                    ></v-divider> -->
                     <v-row align="center">
                         <v-col>
                             <div class="divider-with-text">
                             <span class="divider-line"></span>
-                            <span class="divider-text">Your Text Here</span>
+                            <span class="divider-text">or login with</span>
                             <span class="divider-line"></span>
                             </div>
                         </v-col>
@@ -61,9 +56,7 @@
                             style="width: 45%;"
                         >Line</v-btn>
                     </div>
-                </v-form>
-                <v-text label="or login with"></v-text>
-                
+                </v-form>                
             </v-sheet>
         </v-main>
     </v-app>
