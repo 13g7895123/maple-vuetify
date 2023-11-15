@@ -43,7 +43,7 @@
                     >
                         <v-btn 
                             type="button" 
-                            class="mt-2 white--text"
+                            class="mt-2 text-none"
                             style="width: 45%;"
                             color="#d34f41"
                         >Google</v-btn>
