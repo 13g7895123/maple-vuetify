@@ -78,7 +78,9 @@ html{
 }
 
 .divider-line {
+  flex-grow: 1;
   background-color: #000;  /* 设置横线颜色 */
+  margin: 0 10px;  /* 设置横线与文字之间的间距 */
 }
 
 .divider-text {
