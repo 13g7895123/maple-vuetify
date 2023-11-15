@@ -34,7 +34,7 @@
                     <!-- divider -->
                     <div class="d-flex mt-5" style="width: 70%; position: relative;">
                         <div class="divider-line" style="width: 100%; height: 1px background-color: #555;"></div>
-                        <div class="px-5">or login with</div>
+                        <div class="px-3 text-no-wrap">or login with</div>
                         <div class="divider-line" style="width: 100%; height: 1px background-color: #555;"></div>
                     </div>
                     <div 
