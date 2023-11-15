@@ -31,10 +31,20 @@
                         class="mt-2"
                         style="width: 70%;"
                     >LOGIN</v-btn>
-                    <v-divider
+                    <!-- <v-divider
                         :thickness="2"
                         color="black"
-                    ></v-divider>
+                        style=""
+                    ></v-divider> -->
+                    <v-row align="center">
+                        <v-col>
+                            <div class="divider-with-text">
+                            <span class="divider-line"></span>
+                            <span class="divider-text">Your Text Here</span>
+                            <span class="divider-line"></span>
+                            </div>
+                        </v-col>
+                    </v-row>
                     <div 
                         class="d-flex justify-space-between"
                         style="width: 70%;"
@@ -71,5 +81,20 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.divider-with-text {
+  display: flex;
+  align-items: center;
+}
+
+.divider-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #000;  /* 设置横线颜色 */
+  margin: 0 10px;  /* 设置横线与文字之间的间距 */
+}
+
+.divider-text {
+  margin: 0 5px;  /* 设置文字与横线之间的间距 */
 }
 </style>
