@@ -33,9 +33,9 @@
                     >LOGIN</v-btn>
                     <!-- divider -->
                     <div class="d-flex align-center mt-5" style="width: 70%; position: relative;">
-                        <div class="divider-line text-left" style="width: 100%; height: 1px background-color: #555;"></div>
+                        <div class="divider-line text-left"></div>
                         <div class="px-3 text-no-wrap">or login with</div>
-                        <div class="divider-line text-left" style="width: 100%; height: 1px background-color: #555;"></div>
+                        <div class="divider-line text-left"></div>
                     </div>
                     <div 
                         class="d-flex justify-space-between"
@@ -72,20 +72,10 @@ html{
     align-items: center;
     justify-content: center;
 }
-.divider-with-text {
-  display: flex;
-  align-items: center;
-}
-
 .divider-line {
   flex-grow: 1;
   height: 1px;
   width: 100%;
-  background-color: #000;  /* 设置横线颜色 */
-  margin: 0 10px;  /* 设置横线与文字之间的间距 */
-}
-
-.divider-text {
-  margin: 0 5px;  /* 设置文字与横线之间的间距 */
+  background-color: #555;  /* 设置横线颜色 */
 }
 </style>
