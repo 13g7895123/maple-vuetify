@@ -35,7 +35,7 @@
                     <div class="d-flex align-center mt-5" style="width: 70%; position: relative;">
                         <div class="divider-line text-left" style="width: 100%; height: 1px background-color: #555;"></div>
                         <div class="px-3 text-no-wrap">or login with</div>
-                        <div class="divider-line text-right" style="width: 100%; height: 1px background-color: #555;"></div>
+                        <div class="divider-line text-left" style="width: 100%; height: 1px background-color: #555;"></div>
                     </div>
                     <div 
                         class="d-flex justify-space-between"
@@ -79,6 +79,8 @@ html{
 
 .divider-line {
   flex-grow: 1;
+  height: 1px;
+  width: 100%;
   background-color: #000;  /* 设置横线颜色 */
   margin: 0 10px;  /* 设置横线与文字之间的间距 */
 }
