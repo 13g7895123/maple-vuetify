@@ -77,6 +77,10 @@ html{
   align-items: center;
 }
 
+.divider-line {
+  background-color: #000;  /* 设置横线颜色 */
+}
+
 .divider-text {
   margin: 0 5px;  /* 设置文字与横线之间的间距 */
 }
