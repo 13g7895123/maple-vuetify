@@ -36,7 +36,7 @@
                         color="black"
                     ></v-divider>
                     <div 
-                        class="d-flex"
+                        class="d-flex justify-space-between"
                         style="width: 70%;"
                     >
                         <v-btn 
