@@ -40,7 +40,8 @@
                     </div>
                     <div 
                         class="d-flex justify-space-between"
-                        style="width: 70%;"
+                        style="width: 70%; color:#fff;"
+                        color="#6d8fca"
                     >
                         <v-btn 
                             type="button" 
