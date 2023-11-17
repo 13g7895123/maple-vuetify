@@ -30,7 +30,8 @@
                     ></v-text-field>
                     <v-btn type="submit" 
                         class="mt-2"
-                        style="width: 70%;"
+                        style="width: 70%; color:#fff;"
+                        color="#6d8fca"
                     >LOGIN</v-btn>
                     <!-- divider -->
                     <div class="d-flex align-center mt-5" style="width: 70%; position: relative;">
@@ -40,8 +41,7 @@
                     </div>
                     <div 
                         class="d-flex justify-space-between"
-                        style="width: 70%; color:#fff;"
-                        color="#6d8fca"
+                        style="width: 70%;"
                     >
                         <v-btn 
                             type="button" 
