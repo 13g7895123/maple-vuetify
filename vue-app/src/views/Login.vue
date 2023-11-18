@@ -28,10 +28,11 @@
                         label="Password"
                         style="width: 70%;"
                     ></v-text-field>
-                    <v-btn type="submit" 
+                    <v-btn type="button" 
                         class="mt-2"
                         style="width: 70%; color:#fff;"
                         color="#4287f5"
+                        onclick="loginAction"
                     >LOGIN</v-btn>
                     <!-- divider -->
                     <div class="d-flex align-center mt-5" style="width: 70%; position: relative;">
