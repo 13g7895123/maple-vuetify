@@ -32,7 +32,7 @@
                         class="mt-2"
                         style="width: 70%; color:#fff;"
                         color="#4287f5"
-                        @click="loginAction"
+                        @click="router.push('/bonus')"
                     >LOGIN</v-btn>
                     <!-- divider -->
                     <div class="d-flex align-center mt-5" style="width: 70%; position: relative;">
@@ -66,7 +66,6 @@
 import { useRouter } from "vue-router";
 
 const router = useRouter();
-const loginAction = router.push('/bonus');
 </script>
 <style>
 html{
