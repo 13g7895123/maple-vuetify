@@ -60,6 +60,12 @@
         </v-main>
     </v-app>
 </template>
+<script setup>
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+const loginAction = router.push('/bonus');
+</script>
 <style>
 html{
     overflow-y: auto;
