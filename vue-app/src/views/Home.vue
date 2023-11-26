@@ -11,7 +11,8 @@
 </template>
 <script setup>
 import Navbar from '../components/Navbar.vue';
-import Sidebar from '../components/Sidebar.vue';
+// import Sidebar from '../components/Sidebar.vue';
+import Sidebar from '../components/sidebar/Sidebar.vue';
 </script>
 <style>
 html { overflow-y: auto }
