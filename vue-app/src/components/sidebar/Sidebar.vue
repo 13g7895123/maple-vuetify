@@ -1,6 +1,6 @@
 <template>
-  <v-card>
-    <v-layout>
+  <!-- <v-card>
+    <v-layout> -->
       <v-navigation-drawer
         permanent
         color="#2784FF"
@@ -46,8 +46,8 @@
         <div style="position: absolute; bottom: 20px; margin-left: auto; margin-right: auto; left:0; right: 0; text-align: center;">
         </div>
       </v-navigation-drawer>
-    </v-layout>
-  </v-card>
+    <!-- </v-layout>
+  </v-card> -->
 </template>
 <script setup>
 // const drawer = true
