@@ -4,7 +4,10 @@
     >
         <Sidebar />
         <!-- <Navbar /> -->
-        <v-main class="mt-3 mx-7" style="background-color: #555;">
+        <v-main>
+            <v-container class="px-6 mt-n2" fluid style="background-color: #555;">
+                <v-col cols="12" sm="4"></v-col>
+            </v-container>
             <router-view />
         </v-main>
     </v-app>
