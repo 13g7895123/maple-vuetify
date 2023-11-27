@@ -3,8 +3,8 @@
         :style="{ background: $vuetify.theme.themes.dark.background }"
     >
         <Sidebar />
-        <Navbar />
-        <v-main class="mt-3 mx-7 bg-blue-200">
+        <!-- <Navbar /> -->
+        <v-main class="mt-3 mx-7" style="background-color: #555;">
             <router-view />
         </v-main>
     </v-app>

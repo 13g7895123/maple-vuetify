@@ -54,7 +54,7 @@ const drawer = true
 const mini =  false
 const expandOnHover = true
 const items =  [
-    {icon: 'mdi-border-all', text: '輪迴'},
+    {icon: 'mdi-border-all', text: 'Frenzy Totem'},
     // {icon: 'mdi-account', text: 'account'},
     // {icon: 'mdi-account-group-outline', text: 'test'},
     // {icon: 'mdi-cash-plus', text: 'bonus', link: '/bonus'},
