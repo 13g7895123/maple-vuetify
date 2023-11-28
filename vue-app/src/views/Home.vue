@@ -6,7 +6,7 @@
         <!-- <Navbar /> -->
         <v-main>
             <v-container class="px-3 mt-2" fluid>
-                <div class="mx-3" style="background-color: #555;">
+                <div class="mx-3 px-3" style="background-color: #555;">
                     <router-view />
                 </div>
             </v-container>

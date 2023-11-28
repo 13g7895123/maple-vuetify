@@ -4,6 +4,7 @@ const routes = [
         name: 'Home',
         component: () => import('../views/Home.vue'),
         children: [
+            { path: "/frenzyTotem", component: () => import('../views/frenzyTotem.vue')},
             { 
                 path: "/money",
                 component: () => import('../views/Money.vue'),
