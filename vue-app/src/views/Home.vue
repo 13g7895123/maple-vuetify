@@ -6,7 +6,7 @@
         <!-- <Navbar /> -->
         <v-main>
             <v-container class="px-3 mt-2" fluid>
-                <div class="mx-3 px-3" style="background-color: #555;">
+                <div id='main_area' class="mx-3 px-3">
                     <router-view />
                 </div>
             </v-container>
@@ -20,4 +20,8 @@ import Sidebar from '../components/sidebar/Sidebar.vue';
 </script>
 <style>
 html { overflow-y: auto }
+#main_area{
+    border-radius: 5px;
+    box-shadow: inset;
+}
 </style>
