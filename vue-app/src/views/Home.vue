@@ -20,6 +20,7 @@ import Sidebar from '../components/sidebar/Sidebar.vue';
 <style>
 html { overflow-y: auto }
 #main_area{
+    height: 90vh;
     border: 2px solid #555;
     border-radius: 5px;
     box-shadow: 3px 3px #555;
