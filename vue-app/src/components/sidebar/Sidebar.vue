@@ -55,7 +55,7 @@ const mini =  false
 const expandOnHover = true
 const items =  [
     {icon: 'mdi-border-all', text: 'Frenzy Totem', link: '/frenzyTotem'},
-    {icon: 'mdi-alpha-f-circle-outline', text: 'Fashion', link: '/fashoion'},
+    {icon: 'mdi-alpha-f-circle-outline', text: 'Fashion', link: '/fashion'},
     {icon: 'mdi-currency-usd', text: 'Game Currency', link: '/gameCurrency'},
     // {icon: 'mdi-account', text: 'account'},
     // {icon: 'mdi-account-group-outline', text: 'test'},
