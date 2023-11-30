@@ -15,13 +15,12 @@
 </template>
 <script setup>
 import Navbar from '../components/Navbar.vue';
-// import Sidebar from '../components/Sidebar.vue';
 import Sidebar from '../components/sidebar/Sidebar.vue';
 </script>
 <style>
 html { overflow-y: auto }
 #main_area{
     border-radius: 5px;
-    box-shadow: inset;
+    box-shadow: 3px 3px #555;
 }
 </style>
