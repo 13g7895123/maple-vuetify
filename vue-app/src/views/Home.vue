@@ -6,7 +6,7 @@
         <!-- <Navbar /> -->
         <v-main>
             <v-container class="px-3 mt-2" fluid>
-                <div id='main_area' class="mx-3 px-3 py-3">
+                <div id='main_area' class="mx-3 px-5 py-5">
                     <router-view />
                 </div>
             </v-container>
