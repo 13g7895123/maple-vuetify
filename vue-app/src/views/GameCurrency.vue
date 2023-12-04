@@ -28,4 +28,15 @@ const getData = async() => {
 
 watchEffect(() => getData())
 
+/* 列表 */
+const headers = [
+    { title: 'type', align: 'start', sortable: false, key: 'type' },
+    { title: 'amount_maple', key: 'amount_maple', align: 'center' },
+    { title: 'amount_ntd', key: 'amount_ntd', align: 'end' },
+    { title: 'convert_to_ntd', key: 'convert_to_ntd', align: 'center' },
+    { title: 'ratio', key: 'ratio', align: 'center' },
+    { title: 'actual_ratio', key: 'actual_ratio', align: 'center' },
+    { title: 'paytype', key: 'paytype', align: 'center' },
+]
+
 </script>
