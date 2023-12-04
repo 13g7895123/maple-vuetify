@@ -12,7 +12,7 @@ export default defineConfig({
     port: 8000,
     proxy: {
       '/api': {
-        target: 'http://170.187.229.132:9051/api/',
+        target: 'https://api.mercylife.cc/api/maple/',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
       }
