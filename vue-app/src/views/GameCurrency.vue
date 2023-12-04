@@ -18,7 +18,7 @@ import axios from 'axios'
 const tableData = ref([])
 
 const getData = async() => {
-  const { data: { success, data } } = await axios.get('/game_currency.php?action=all_data')
+  const { data: { success, data } } = await axios.get('/api/game_currency.php?action=all_data')
 
   if (success){
     console.log(data)
