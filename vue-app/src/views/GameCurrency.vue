@@ -21,7 +21,6 @@ const getData = async() => {
   const { data: { success, data } } = await axios.get('/api/game_currency.php?action=all_data')
 
   if (success){
-    console.log(data)
     tableData.value = data
   }
 }
@@ -29,6 +28,7 @@ const getData = async() => {
 watchEffect(() => getData())
 
 /* 列表 */
+const itemsPerPage = 5
 const headers = [
     { title: 'type', align: 'start', sortable: false, key: 'type' },
     { title: 'amount_maple', key: 'amount_maple', align: 'center' },
