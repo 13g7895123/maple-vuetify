@@ -39,4 +39,45 @@ const headers = [
     { title: 'paytype', key: 'paytype', align: 'center' },
 ]
 
+const FakeAPI = {
+    async fetch ({ page, itemsPerPage, sortBy }) {
+        return new Promise(resolve => {
+            setTimeout(() => {
+                const start = (page - 1) * itemsPerPage
+                const end = start + itemsPerPage
+                const items = tableData.value.slice()
+
+                if (sortBy.length) {
+                    const sortKey = sortBy[0].key
+                    const sortOrder = sortBy[0].order
+                    items.sort((a, b) => {
+                        const aValue = a[sortKey]
+                        const bValue = b[sortKey]
+                        return sortOrder === 'desc' ? bValue - aValue : aValue - bValue
+                    })
+                }
+
+                const paginated = items.slice(start, end)
+
+                resolve({ items: paginated, total: items.length })
+            }, 500)
+        })
+    }
+}
+
+let serverItems = []
+let loading = true
+let totalItems= 0
+
+const loadItems = ({ page, itemsPerPage, sortBy }) => {
+    loading = true
+    FakeAPI.fetch({ page, itemsPerPage, sortBy }).then(({ items, total }) => {
+        serverItems = items
+        totalItems = total
+        loading = false
+        console.log(serverItems);
+        console.log(loading);
+    })
+}
+
 </script>
