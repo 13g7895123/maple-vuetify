@@ -43,7 +43,6 @@ const FakeAPI = {
                 }
 
                 const paginated = items.slice(start, end)
-
                 resolve({ items: paginated, total: items.length })
             }, 500)
         })
@@ -73,6 +72,7 @@ const loadItems = ({ page, itemsPerPage, sortBy }) => {
         totalItems = total
         loading = false
         console.log(serverItems);
+        console.log(totalItems);
         console.log(loading);
     })
 }
