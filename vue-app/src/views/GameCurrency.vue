@@ -8,7 +8,19 @@
             class="elevation-1"
             item-value="name"
             @update:options="loadItems"
-        ></v-data-table-server>
+        >
+            <template v-slot:item="row">
+                <tr>
+                    <td>{{row.item.type}}</td>
+                    <td>{{row.item.amount_maple}}</td>
+                    <td>{{row.item.amount_ntd}}</td>
+                    <td>{{row.item.convert_to_ntd}}</td>
+                    <td>{{row.item.ratio}}</td>
+                    <td>{{row.item.actual_ratio}}</td>
+                    <td>{{row.item.paytype}}</td>
+                </tr>
+            </template>
+        </v-data-table-server>
     </v-card>
 </template>
 <script setup>
@@ -53,7 +65,7 @@ const FakeAPI = {
 /* 列表 */
 const itemsPerPage = 5
 const headers = [
-    { title: 'type', align: 'start', sortable: false, key: 'type' },
+    { title: '類型', align: 'start', sortable: false, key: 'type' },
     { title: 'amount_maple', key: 'amount_maple', align: 'center' },
     { title: 'amount_ntd', key: 'amount_ntd', align: 'end' },
     { title: 'convert_to_ntd', key: 'convert_to_ntd', align: 'center' },
