@@ -19,25 +19,10 @@ const tableData = ref([])
 
 const getData = async() => {
   const { data: { success, data } } = await axios.get('/api/game_currency.php?action=all_data')
-
-  if (success){
-    tableData.value = data
-  }
+  if (success){ tableData.value = data }
 }
 
 watchEffect(() => getData())
-
-/* 列表 */
-const itemsPerPage = 5
-const headers = [
-    { title: 'type', align: 'start', sortable: false, key: 'type' },
-    { title: 'amount_maple', key: 'amount_maple', align: 'center' },
-    { title: 'amount_ntd', key: 'amount_ntd', align: 'end' },
-    { title: 'convert_to_ntd', key: 'convert_to_ntd', align: 'center' },
-    { title: 'ratio', key: 'ratio', align: 'center' },
-    { title: 'actual_ratio', key: 'actual_ratio', align: 'center' },
-    { title: 'paytype', key: 'paytype', align: 'center' },
-]
 
 const FakeAPI = {
     async fetch ({ page, itemsPerPage, sortBy }) {
@@ -64,6 +49,18 @@ const FakeAPI = {
         })
     }
 }
+
+/* 列表 */
+const itemsPerPage = 5
+const headers = [
+    { title: 'type', align: 'start', sortable: false, key: 'type' },
+    { title: 'amount_maple', key: 'amount_maple', align: 'center' },
+    { title: 'amount_ntd', key: 'amount_ntd', align: 'end' },
+    { title: 'convert_to_ntd', key: 'convert_to_ntd', align: 'center' },
+    { title: 'ratio', key: 'ratio', align: 'center' },
+    { title: 'actual_ratio', key: 'actual_ratio', align: 'center' },
+    { title: 'paytype', key: 'paytype', align: 'center' },
+]
 
 let serverItems = []
 let loading = true
