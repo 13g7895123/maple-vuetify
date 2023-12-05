@@ -66,6 +66,8 @@ let loading = true
 let totalItems= 0
 
 const loadItems = ({ page, itemsPerPage, sortBy }) => {
+    console.log('page' + page);
+    console.log('itemsPerPage' + itemsPerPage);
     loading = true
     FakeAPI.fetch({ page, itemsPerPage, sortBy }).then(({ items, total }) => {
         serverItems = items
