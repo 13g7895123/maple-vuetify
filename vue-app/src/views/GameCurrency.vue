@@ -12,12 +12,12 @@
             <template v-slot:items="props">
                 <tr>
                     <td>{{ (props.item.type == 0) ? '進貨' : '出貨' }}</td>
-                    <td>{{props.item.amount_maple}}</td>
-                    <td>{{props.item.amount_ntd}}</td>
-                    <td>{{props.item.convert_to_ntd}}</td>
-                    <td>{{props.item.ratio}}</td>
-                    <td>{{props.item.actual_ratio}}</td>
-                    <td>{{props.item.paytype}}</td>
+                    <td>{{ props.item.amount_maple }}</td>
+                    <td>{{ props.item.amount_ntd }}</td>
+                    <td>{{ props.item.convert_to_ntd }}</td>
+                    <td>{{ props.item.ratio }}</td>
+                    <td>{{ props.item.actual_ratio }}</td>
+                    <td>{{ props.item.paytype }}</td>
                 </tr>
             </template>
         </v-data-table-server>
@@ -65,8 +65,8 @@ const FakeAPI = {
 const itemsPerPage = 5
 const headers = [
     { title: '類型', align: 'start', sortable: false, key: 'type' },
-    { title: 'amount_maple', key: 'amount_maple', align: 'center' },
-    { title: 'amount_ntd', key: 'amount_ntd', align: 'end' },
+    { title: '金額(楓幣)', key: 'amount_maple', align: 'center' },
+    { title: '金額(新台幣)', key: 'amount_ntd', align: 'end' },
     { title: 'convert_to_ntd', key: 'convert_to_ntd', align: 'center' },
     { title: 'ratio', key: 'ratio', align: 'center' },
     { title: 'actual_ratio', key: 'actual_ratio', align: 'center' },
