@@ -9,15 +9,15 @@
             item-value="name"
             @update:options="loadItems"
         >
-            <template v-slot:item="row">
+            <template v-slot:items="props">
                 <tr>
-                    <td>{{row.item.type}}</td>
-                    <td>{{row.item.amount_maple}}</td>
-                    <td>{{row.item.amount_ntd}}</td>
-                    <td>{{row.item.convert_to_ntd}}</td>
-                    <td>{{row.item.ratio}}</td>
-                    <td>{{row.item.actual_ratio}}</td>
-                    <td>{{row.item.paytype}}</td>
+                    <td>{{props.item.type}}</td>
+                    <td>{{props.item.amount_maple}}</td>
+                    <td>{{props.item.amount_ntd}}</td>
+                    <td>{{props.item.convert_to_ntd}}</td>
+                    <td>{{props.item.ratio}}</td>
+                    <td>{{props.item.actual_ratio}}</td>
+                    <td>{{props.item.paytype}}</td>
                 </tr>
             </template>
         </v-data-table-server>
