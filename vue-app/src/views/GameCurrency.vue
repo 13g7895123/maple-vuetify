@@ -12,7 +12,8 @@
         >
             <template v-slot:items="props">
                 <tr>
-                    <td>{{ (props.item.type == 0) ? '進貨' : '出貨' }}</td>
+                    <!-- <td>{{ (props.item.type == 0) ? '進貨' : '出貨' }}</td> -->
+                    <td>{{ props.item.type }}</td>
                     <td>{{ props.item.amount_maple }}</td>
                     <td>{{ props.item.amount_ntd }}</td>
                     <td>{{ props.item.convert_to_ntd }}</td>
@@ -25,7 +26,7 @@
     </v-card>
 </template>
 <script setup>
-import { ref, watchEffect } from 'vue'
+import { ref, watchEffect, onMounted } from 'vue'
 import axios from 'axios'
 
 const tableData = ref([])
@@ -35,7 +36,8 @@ const getData = async() => {
   if (success){ tableData.value = data }
 }
 
-watchEffect(() => getData())
+// watchEffect(() => getData())
+onMounted(() => getData())
 
 const FakeAPI = {
     async fetch ({ page, itemsPerPage, sortBy }) {
