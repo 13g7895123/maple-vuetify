@@ -82,6 +82,7 @@ const loadItems = ({ page, itemsPerPage, sortBy }) => {
     console.log('page' + page);
     console.log('itemsPerPage' + itemsPerPage);
     loading = true
+    console.log(loading);
     FakeAPI.fetch({ page, itemsPerPage, sortBy }).then(({ items, total }) => {
         serverItems = items
         totalItems = total
@@ -90,7 +91,6 @@ const loadItems = ({ page, itemsPerPage, sortBy }) => {
         console.log(serverItems);
         console.log(totalItems);
         console.log(loading);
-        console.log('111' + tableData.value);
     })
 }
 
