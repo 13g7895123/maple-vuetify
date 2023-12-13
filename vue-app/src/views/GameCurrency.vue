@@ -4,9 +4,10 @@
             v-model:items-per-page="itemsPerPage"
             :headers="headers"
             :items-length="totalItems"
-            :items="serverItems"
+            :items="tableData"
             class="elevation-1"
             item-value="type"
+            :loading="loading"
             @update:options="loadItems"
         >
             <template v-slot:items="props">
@@ -86,7 +87,7 @@ const loadItems = ({ page, itemsPerPage, sortBy }) => {
         serverItems = items
         totalItems = total
         loading = false
-        // tableData.value = serverItems
+        tableData.value = serverItems
         console.log(serverItems);
         console.log(totalItems);
         console.log(loading);
