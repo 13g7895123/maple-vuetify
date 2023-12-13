@@ -5,8 +5,9 @@
             :headers="headers"
             :items-length="totalItems"
             :items="serverItems"
+            :loading="loading"
             class="elevation-1"
-            item-value="name"
+            item-value="type"
             @update:options="loadItems"
         >
             <template v-slot:items="props">
