@@ -69,10 +69,10 @@ const headers = [
     { title: '類型', align: 'start', sortable: false, key: 'type' },
     { title: '金額(楓幣)', key: 'amount_maple', align: 'center' },
     { title: '金額(新台幣)', key: 'amount_ntd', align: 'end' },
-    { title: 'convert_to_ntd', key: 'convert_to_ntd', align: 'center' },
-    { title: 'ratio', key: 'ratio', align: 'center' },
-    { title: 'actual_ratio', key: 'actual_ratio', align: 'center' },
-    { title: 'paytype', key: 'paytype', align: 'center' },
+    { title: '折合台幣', key: 'convert_to_ntd', align: 'center' },
+    { title: '比值', key: 'ratio', align: 'center' },
+    { title: '實際比值', key: 'actual_ratio', align: 'center' },
+    { title: '支付方式', key: 'paytype', align: 'center' },
 ]
 
 let serverItems = []
@@ -80,18 +80,12 @@ let loading = true
 let totalItems= 0
 
 const loadItems = ({ page, itemsPerPage, sortBy }) => {
-    console.log('page' + page);
-    console.log('itemsPerPage' + itemsPerPage);
     loading = true
     FakeAPI.fetch({ page, itemsPerPage, sortBy }).then(({ items, total }) => {
         serverItems = items
         totalItems = total
         loading = false
         tableData.value = serverItems
-        console.log(serverItems);
-        console.log(totalItems);
-        console.log(loading);
-        // console.log('111' + tableData.value);
     })
 }
 
