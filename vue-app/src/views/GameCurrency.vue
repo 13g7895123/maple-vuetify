@@ -10,18 +10,16 @@
             :loading="loading"
             @update:options="loadItems"
         >
-            <template v-slot:body="tableData">
-                <tbody>
-                    <tr>
-                        <td>{{ tableData.item.type }}</td>
-                        <td>{{ tableData.item.amount_maple }}</td>
-                        <td>{{ tableData.item.amount_ntd }}</td>
-                        <td>{{ tableData.item.convert_to_ntd }}</td>
-                        <td>{{ tableData.item.ratio }}</td>
-                        <td>{{ tableData.item.actual_ratio }}</td>
-                        <td>{{ tableData.item.paytype }}</td>
-                    </tr>
-                </tbody>
+            <template v-slot:items="props">
+                <tr>
+                    <td>{{ (props.item.type == 0) ? '進貨' : '出貨' }}</td>
+                    <td>{{ props.item.amount_maple }}</td>
+                    <td>{{ props.item.amount_ntd }}</td>
+                    <td>{{ props.item.convert_to_ntd }}</td>
+                    <td>{{ props.item.ratio }}</td>
+                    <td>{{ props.item.actual_ratio }}</td>
+                    <td>{{ props.item.paytype }}</td>
+                </tr>
             </template>
         </v-data-table-server>
     </v-card>
