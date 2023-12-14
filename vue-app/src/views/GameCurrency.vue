@@ -1,33 +1,28 @@
 <template>
     <v-btn>新增</v-btn>
     <v-card>
-        <!-- <v-row> -->
-            
-        <!-- </v-row> -->
-        <!-- <v-row> -->
-            <v-data-table-server
-                v-model:items-per-page="itemsPerPage"
-                :headers="headers"
-                :items-length="totalItems"
-                :items="tableData"
-                class="elevation-1"
-                item-value="type"
-                :loading="loading"
-                @update:options="loadItems"
-            >
-                <template v-slot:items="props">
-                    <tr>
-                        <td>{{ (props.item.type == 0) ? '進貨' : '出貨' }}</td>
-                        <td>{{ props.item.amount_maple }}</td>
-                        <td>{{ props.item.amount_ntd }}</td>
-                        <td>{{ props.item.convert_to_ntd }}</td>
-                        <td>{{ props.item.ratio }}</td>
-                        <td>{{ props.item.actual_ratio }}</td>
-                        <td>{{ props.item.paytype }}</td>
-                    </tr>
-                </template>
-            </v-data-table-server>
-        <!-- </v-row> -->
+        <v-data-table-server
+            v-model:items-per-page="itemsPerPage"
+            :headers="headers"
+            :items-length="totalItems"
+            :items="tableData"
+            class="elevation-1"
+            item-value="type"
+            :loading="loading"
+            @update:options="loadItems"
+        >
+            <template v-slot:items="props">
+                <tr>
+                    <td>{{ (props.item.type == 0) ? '進貨' : '出貨' }}</td>
+                    <td>{{ props.item.amount_maple }}</td>
+                    <td>{{ props.item.amount_ntd }}</td>
+                    <td>{{ props.item.convert_to_ntd }}</td>
+                    <td>{{ props.item.ratio }}</td>
+                    <td>{{ props.item.actual_ratio }}</td>
+                    <td>{{ props.item.paytype }}</td>
+                </tr>
+            </template>
+        </v-data-table-server>
     </v-card>
 </template>
 <script setup>
@@ -88,6 +83,8 @@ let totalItems= 0
 const loadItems = ({ page, itemsPerPage, sortBy }) => {
     loading = true
     FakeAPI.fetch({ page, itemsPerPage, sortBy }).then(({ items, total }) => {
+        console.log(`loadItems' items: ${items}`);
+        console.log(`loadItems' total: ${total}`);
         serverItems = items
         totalItems = total
         loading = false
