@@ -13,7 +13,7 @@
             <template v-slot:body="props">
                 <tbody>
                     <tr>
-                        <td>{{ (props.item.type == 0) ? '進貨' : '出貨' }}</td>
+                        <td>{{ props.item.type }}</td>
                         <td>{{ props.item.amount_maple }}</td>
                         <td>{{ props.item.amount_ntd }}</td>
                         <td>{{ props.item.convert_to_ntd }}</td>
