@@ -1,7 +1,7 @@
 <template>
     <v-card>
         <v-row>
-            <v-button>新增</v-button>
+            <v-btn>新增</v-btn>
         </v-row>
         <v-row>
             <v-data-table-server
