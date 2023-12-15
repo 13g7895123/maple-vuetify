@@ -13,7 +13,7 @@
         >
             <template v-slot:items="props">
                 <tr>
-                    <td>{{ (props.item.type == 0) ? '進貨' : '出貨' }}</td>
+                    <td>{{ convertStatus(props.item.type) }}</td>
                     <td>{{ props.item.amount_maple }}</td>
                     <td>{{ props.item.amount_ntd }}</td>
                     <td>{{ props.item.convert_to_ntd }}</td>
@@ -90,6 +90,14 @@ const loadItems = ({ page, itemsPerPage, sortBy }) => {
         loading = false
         tableData.value = serverItems
     })
+}
+
+const convertStatus = (num) => {
+    if (num == 0){
+        return '進貨'
+    }else if (num == 1){
+        return '出貨'
+    }
 }
 
 </script>
