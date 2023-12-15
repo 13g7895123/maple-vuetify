@@ -15,7 +15,7 @@ const routes = [
                 // ]
             },
             { path: "/bonus", component: () => import('../views/Bonus.vue')},
-            { path: "/test", component: () => import('../views/Test.vue')},
+            { path: "/test", component: () => import('../views/Test2.vue')},
         ]
     },
     {
