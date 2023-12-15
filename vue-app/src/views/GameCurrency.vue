@@ -45,18 +45,7 @@ const FakeAPI = {
                 console.log(tableData.value);
                 const start = (page - 1) * itemsPerPage
                 const end = start + itemsPerPage
-                const items = tableData.value.slice().filter(item => {
-                    if (search.name && !item.name.toLowerCase().includes(search.name.toLowerCase())) {
-                    return false
-                    }
-
-                    // eslint-disable-next-line sonarjs/prefer-single-boolean-return
-                    if (search.calories && !(item.calories >= Number(search.calories))) {
-                    return false
-                    }
-
-                    return true
-                })
+                const items = tableData.value.slice()
 
                 if (sortBy.length) {
                     const sortKey = sortBy[0].key
