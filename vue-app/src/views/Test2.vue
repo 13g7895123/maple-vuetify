@@ -111,6 +111,7 @@
       iron: '22',
     },
   ]
+  console.log(desserts);
 
   const FakeAPI = {
     async fetch ({ page, itemsPerPage, sortBy, search }) {
