@@ -94,10 +94,12 @@ const headers = [
 let serverItems = []
 let loading = true
 let totalItems= 0
+const type = ''
+const amount_maple = ''
 
 const loadItems = ({ page, itemsPerPage, sortBy }) => {
     loading = true
-    FakeAPI.fetch({ page, itemsPerPage, sortBy, search: { name: this.type, calories: this.amount_maple } }).then(({ items, total }) => {
+    FakeAPI.fetch({ page, itemsPerPage, sortBy, search: { name: type, calories: amount_maple } }).then(({ items, total }) => {
         console.log(items);
         console.log(total);
         serverItems = items
