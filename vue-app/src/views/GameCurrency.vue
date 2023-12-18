@@ -42,7 +42,7 @@ const getData = async() => {
 watchEffect(() => getData())
 
 const FakeAPI = {
-    async fetch ({ page, itemsPerPage, sortBy }) {
+    async fetch ({ page, itemsPerPage, sortBy, search }) {
         return new Promise(resolve => {
             setTimeout(() => {
                 const start = (page - 1) * itemsPerPage
