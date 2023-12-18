@@ -29,6 +29,8 @@
     </v-data-table-server>
   </template>
   <script>
+  import { ref, watchEffect } from 'vue'
+  import axios from 'axios'
   const desserts = [
     {
       name: 'Frozen Yogurt',
@@ -114,14 +116,23 @@
   // console.log(desserts);
   // console.log(desserts[0]['name']);
 
+  const tableData = ref([])
+  const getData = async() => {
+    const { data: { success, data } } = await axios.get('/api/game_currency.php?action=all_data')
+    if (success){ tableData.value = data }
+    console.log(tableData.value);
+  }
+
+  watchEffect(() => getData())
+
   const FakeAPI = {
     async fetch ({ page, itemsPerPage, sortBy, search }) {
       return new Promise(resolve => {
         setTimeout(() => {
           const start = (page - 1) * itemsPerPage
           const end = start + itemsPerPage
-          const items = desserts.slice().filter(item => {
-            if (search.name && !item.name.toLowerCase().includes(search.name.toLowerCase())) {
+          const items = tableData.value.slice().filter(item => {
+            if (search.id && !item.id.toLowerCase().includes(search.id.toLowerCase())) {
               return false
             }
 
@@ -155,18 +166,14 @@
   export default {
     data: () => ({
       itemsPerPage: 5,
-      headers: [
-        {
-          title: 'Dessert (100g serving)',
-          align: 'start',
-          sortable: false,
-          key: 'name',
-        },
-        { title: 'Calories', key: 'calories', align: 'end' },
-        { title: 'Fat (g)', key: 'fat', align: 'end' },
-        { title: 'Carbs (g)', key: 'carbs', align: 'end' },
-        { title: 'Protein (g)', key: 'protein', align: 'end' },
-        { title: 'Iron (%)', key: 'iron', align: 'end' },
+      headers : [
+        { title: '類型', align: 'start', sortable: false, key: 'type' },
+        { title: '金額(楓幣)', key: 'amount_maple', align: 'center' },
+        { title: '金額(新台幣)', key: 'amount_ntd', align: 'end' },
+        { title: '折合台幣', key: 'convert_to_ntd', align: 'center' },
+        { title: '比值', key: 'ratio', align: 'center' },
+        { title: '實際比值', key: 'actual_ratio', align: 'center' },
+        { title: '支付方式', key: 'paytype', align: 'center' },
       ],
       serverItems: [],
       loading: true,
