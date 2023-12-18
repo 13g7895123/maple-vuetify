@@ -60,6 +60,8 @@ const FakeAPI = {
                 }
 
                 const paginated = items.slice(start, end)
+                console.log(paginated);
+                console.log(items.length);
                 resolve({ items: paginated, total: items.length })
             }, 500)
         })
