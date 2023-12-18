@@ -34,8 +34,8 @@ const tableData2 = []
 
 const getData = async() => {
   const { data: { success, data } } = await axios.get('/api/game_currency.php?action=all_data')
-  if (success){ tableData2 = data }
-  console.log(tableData2);
+  if (success){ tableData.value = data }
+  console.log(tableData.value);
 }
 
 
