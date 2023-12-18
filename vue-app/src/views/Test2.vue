@@ -112,6 +112,7 @@
     },
   ]
   console.log(desserts);
+  console.log(desserts[0]['name']);
 
   const FakeAPI = {
     async fetch ({ page, itemsPerPage, sortBy, search }) {
