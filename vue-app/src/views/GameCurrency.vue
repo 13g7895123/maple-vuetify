@@ -97,7 +97,7 @@ let totalItems= 0
 
 const loadItems = ({ page, itemsPerPage, sortBy }) => {
     loading = true
-    FakeAPI.fetch({ page, itemsPerPage, sortBy, search: { name: this.name, calories: this.calories } }).then(({ items, total }) => {
+    FakeAPI.fetch({ page, itemsPerPage, sortBy, search: { name: this.type, calories: this.amount_maple } }).then(({ items, total }) => {
         console.log(items);
         console.log(total);
         serverItems = items
