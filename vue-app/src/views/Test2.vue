@@ -194,7 +194,7 @@
       loadItems ({ page, itemsPerPage, sortBy }) {
         this.loading = true
         
-        FakeAPI.fetch({ page, itemsPerPage, sortBy}).then(({ items, total }) => {
+        FakeAPI.fetch({ page, itemsPerPage, sortBy, search: { name: this.name, calories: this.calories } }).then(({ items, total }) => {
           console.log(items);
           console.log(total);
           this.serverItems = items
