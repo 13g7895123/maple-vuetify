@@ -11,7 +11,7 @@
             :loading="loading"
             @update:options="loadItems"
         >
-            <!-- <template v-slot:items="props">
+            <template v-slot:items="props">
                 <tr>
                     <td>{{ convertStatus(props.item.type) }}</td>
                     <td>{{ props.item.amount_maple }}</td>
@@ -21,7 +21,7 @@
                     <td>{{ props.item.actual_ratio }}</td>
                     <td>{{ props.item.paytype }}</td>
                 </tr>
-            </template> -->
+            </template>
         </v-data-table-server>
     </v-card>
 </template>
