@@ -34,7 +34,7 @@ const tableData = ref([])
 const getData = async() => {
   const { data: { success, data } } = await axios.get('/api/game_currency.php?action=all_data')
   if (success){ tableData.value = data }
-  console.log(tableData.value[0]['id']);
+//   console.log(tableData.value[0]['id']);
 }
 
 
@@ -44,7 +44,7 @@ const FakeAPI = {
     async fetch ({ page, itemsPerPage, sortBy }) {
         return new Promise(resolve => {
             setTimeout(() => {
-                console.log(tableData.value);
+                // console.log(tableData.value);
                 const start = (page - 1) * itemsPerPage
                 const end = start + itemsPerPage
                 const items = tableData.value.slice()
@@ -60,8 +60,8 @@ const FakeAPI = {
                 }
 
                 const paginated = items.slice(start, end)
-                console.log(paginated);
-                console.log(items.length);
+                // console.log(paginated);
+                // console.log(items.length);
                 resolve({ items: paginated, total: items.length })
             }, 500)
         })

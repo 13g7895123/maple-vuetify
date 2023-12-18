@@ -111,8 +111,8 @@
       iron: '22',
     },
   ]
-  console.log(desserts);
-  console.log(desserts[0]['name']);
+  // console.log(desserts);
+  // console.log(desserts[0]['name']);
 
   const FakeAPI = {
     async fetch ({ page, itemsPerPage, sortBy, search }) {
@@ -144,8 +144,8 @@
           }
 
           const paginated = items.slice(start, end)
-          console.log(paginated);
-          console.log(items.length);
+          // console.log(paginated);
+          // console.log(items.length);
           resolve({ items: paginated, total: items.length })
         }, 500)
       })
@@ -186,6 +186,8 @@
     methods: {
       loadItems ({ page, itemsPerPage, sortBy }) {
         this.loading = true
+        console.log(items);
+        console.log(total);
         FakeAPI.fetch({ page, itemsPerPage, sortBy, search: { name: this.name, calories: this.calories } }).then(({ items, total }) => {
           this.serverItems = items
           this.totalItems = total
