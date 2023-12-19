@@ -5,7 +5,7 @@
             v-model:items-per-page="itemsPerPage"
             :headers="headers"
             :items-length="totalItems"
-            :items="testArr"
+            :items="serverItems"
             class="elevation-1"
             item-value="type"
             :loading="loading"
@@ -98,18 +98,13 @@ let loading = true
 let totalItems= 0
 const type = ''
 const amount_maple = ''
-const testArr = ref([])
 
 const loadItems = ({ page, itemsPerPage, sortBy }) => {
     loading = true
     FakeAPI.fetch({ page, itemsPerPage, sortBy, search: { name: type, calories: amount_maple } }).then(({ items, total }) => {
-        // console.log(items);
-        // console.log(total);
-        // serverItems.value = items
+        serverItems.value = items
         totalItems = total
         loading = false
-        // tableData.value = serverItems
-        testArr.value = items
     })
 }
 
