@@ -5,7 +5,7 @@
             v-model:items-per-page="itemsPerPage"
             :headers="headers"
             :items-length="totalItems"
-            :items="tableData"
+            :items="testArr"
             class="elevation-1"
             item-value="type"
             :loading="loading"
@@ -98,6 +98,7 @@ let loading = true
 let totalItems= 0
 const type = ''
 const amount_maple = ''
+const testArr = ref([])
 
 const loadItems = ({ page, itemsPerPage, sortBy }) => {
     loading = true
@@ -108,7 +109,7 @@ const loadItems = ({ page, itemsPerPage, sortBy }) => {
         totalItems = total
         loading = false
         // tableData.value = serverItems
-        tableData.value = items
+        testArr.value = items
     })
 }
 
