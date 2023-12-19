@@ -5,7 +5,7 @@
             v-model:items-per-page="itemsPerPage"
             :headers="headers"
             :items-length="totalItems"
-            :items="tableData"
+            :items="serverItems"
             class="elevation-1"
             item-value="type"
             :loading="loading"
@@ -30,7 +30,7 @@ import { ref, watchEffect } from 'vue'
 import axios from 'axios'
 
 const tableData = ref([])
-const tableData2 = []
+// const tableData2 = []
 
 const getData = async() => {
   const { data: { success, data } } = await axios.get('/api/game_currency.php?action=all_data')
@@ -107,7 +107,7 @@ const loadItems = ({ page, itemsPerPage, sortBy }) => {
         serverItems = items
         totalItems = total
         loading = false
-        tableData.value = serverItems
+        // tableData.value = serverItems
     })
 }
 
