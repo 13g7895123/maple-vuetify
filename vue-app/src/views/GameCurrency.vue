@@ -47,6 +47,7 @@ const FakeAPI = {
             setTimeout(() => {
                 const start = (page - 1) * itemsPerPage
                 const end = start + itemsPerPage
+                console.log(tableData.value);
                 const items = tableData.value.slice().filter(item => {
                     if (search.id && !item.id.toLowerCase().includes(search.id.toLowerCase())) {
                     return false
@@ -59,6 +60,7 @@ const FakeAPI = {
 
                     return true
                 })
+                console.log(items);
 
                 if (sortBy.length) {
                     const sortKey = sortBy[0].key
@@ -100,8 +102,8 @@ const amount_maple = ''
 const loadItems = ({ page, itemsPerPage, sortBy }) => {
     loading = true
     FakeAPI.fetch({ page, itemsPerPage, sortBy, search: { name: type, calories: amount_maple } }).then(({ items, total }) => {
-        console.log(items);
-        console.log(total);
+        // console.log(items);
+        // console.log(total);
         serverItems = items
         totalItems = total
         loading = false

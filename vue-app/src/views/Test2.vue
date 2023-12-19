@@ -131,6 +131,7 @@
         setTimeout(() => {
           const start = (page - 1) * itemsPerPage
           const end = start + itemsPerPage
+          console.log(tableData.value);
           const items = tableData.value.slice().filter(item => {
             if (search.id && !item.id.toLowerCase().includes(search.id.toLowerCase())) {
               return false
