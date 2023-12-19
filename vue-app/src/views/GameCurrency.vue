@@ -50,12 +50,12 @@ const FakeAPI = {
                 console.log(tableData.value);
                 const items = tableData.value.slice().filter(item => {
                     if (search.id && !item.id.toLowerCase().includes(search.id.toLowerCase())) {
-                    return false
+                        return false
                     }
 
                     // eslint-disable-next-line sonarjs/prefer-single-boolean-return
                     if (search.calories && !(item.calories >= Number(search.calories))) {
-                    return false
+                        return false
                     }
 
                     return true
@@ -104,10 +104,11 @@ const loadItems = ({ page, itemsPerPage, sortBy }) => {
     FakeAPI.fetch({ page, itemsPerPage, sortBy, search: { name: type, calories: amount_maple } }).then(({ items, total }) => {
         // console.log(items);
         // console.log(total);
-        serverItems.value = items
+        // serverItems.value = items
         totalItems = total
         loading = false
         // tableData.value = serverItems
+        tableData.value = items
     })
 }
 
