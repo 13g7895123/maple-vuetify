@@ -5,7 +5,7 @@
             v-model:items-per-page="itemsPerPage"
             :headers="headers"
             :items-length="totalItems"
-            :items="serverItems"
+            :items="tableData"
             class="elevation-1"
             item-value="type"
             :loading="loading"
