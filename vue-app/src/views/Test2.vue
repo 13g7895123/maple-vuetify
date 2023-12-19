@@ -143,6 +143,7 @@
 
             return true
           })
+          console.log(items);
 
           if (sortBy.length) {
             const sortKey = sortBy[0].key
@@ -193,10 +194,9 @@
     methods: {
       loadItems ({ page, itemsPerPage, sortBy }) {
         this.loading = true
-        
         FakeAPI.fetch({ page, itemsPerPage, sortBy, search: { name: this.name, calories: this.calories } }).then(({ items, total }) => {
-          console.log(items);
-          console.log(total);
+          // console.log(items);
+          // console.log(total);
           this.serverItems = items
           this.totalItems = total
           this.loading = false
