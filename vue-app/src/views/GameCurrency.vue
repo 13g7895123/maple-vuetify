@@ -93,7 +93,7 @@ const headers = [
     { title: '支付方式', key: 'paytype', align: 'center' },
 ]
 
-let serverItems = []
+let serverItems = ref([])
 let loading = true
 let totalItems= 0
 const type = ''
@@ -104,7 +104,7 @@ const loadItems = ({ page, itemsPerPage, sortBy }) => {
     FakeAPI.fetch({ page, itemsPerPage, sortBy, search: { name: type, calories: amount_maple } }).then(({ items, total }) => {
         // console.log(items);
         // console.log(total);
-        serverItems = items
+        serverItems.value = items
         totalItems = total
         loading = false
         // tableData.value = serverItems
