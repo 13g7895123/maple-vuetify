@@ -2,7 +2,8 @@
     <v-app
         :style="{ background: $vuetify.theme.themes.dark.background }"
     >
-        <Sidebar />
+        <!-- <Sidebar /> -->
+        <Test />
         <!-- <Navbar /> -->
         <v-main>
             <v-container class="px-3 mt-2" fluid>
@@ -16,6 +17,7 @@
 <script setup>
 import Navbar from '../components/Navbar.vue';
 import Sidebar from '../components/sidebar/Sidebar.vue';
+import Test from '../components/sidebar/Test.vue'
 </script>
 <style>
 html { overflow-y: auto }
