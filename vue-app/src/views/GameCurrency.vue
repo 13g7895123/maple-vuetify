@@ -1,6 +1,7 @@
 <template>
     <v-btn
-    color="#2196F3"
+    color="#2784FF"
+    style="font-size: #fff;"
     >
         新增
     </v-btn>
