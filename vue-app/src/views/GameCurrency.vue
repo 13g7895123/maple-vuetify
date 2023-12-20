@@ -1,5 +1,9 @@
 <template>
-    <v-btn>新增</v-btn>
+    <v-btn
+    color="#2196F3"
+    >
+        新增
+    </v-btn>
     <v-card>
         <v-data-table-server
             v-model:items-per-page="itemsPerPage"
