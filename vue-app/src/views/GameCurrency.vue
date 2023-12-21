@@ -17,7 +17,7 @@
             @update:options="loadItems"
         >
             <template v-slot:item.columns="{ type }">
-                <v-chip>{{ type }}</v-chip>
+                <v-chip>{{ type.type }}</v-chip>
             </template>
         </v-data-table-server>
     </v-card>
