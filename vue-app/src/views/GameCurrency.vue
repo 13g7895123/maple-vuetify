@@ -12,10 +12,11 @@
             :items-length="totalItems"
             :items="serverItems"
             class="elevation-1"
+            item-value="type"
             :loading="loading"
             @update:options="loadItems"
         >
-            <template v-slot:item.type="{ item }">
+            <template v-slot:item="{ item }">
                 <v-chip>{{ item.type }}</v-chip>
             </template>
         </v-data-table-server>
