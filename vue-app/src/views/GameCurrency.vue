@@ -11,16 +11,8 @@
             :loading="loading"
             @update:options="loadItems"
         >
-            <template v-slot:items="props">
-                <tr>
-                    <td>{{ convertStatus(props.item.type) }}</td>
-                    <td>{{ props.item.amount_maple }}</td>
-                    <td>{{ props.item.amount_ntd }}</td>
-                    <td>{{ props.item.convert_to_ntd }}</td>
-                    <td>{{ props.item.ratio }}</td>
-                    <td>{{ props.item.actual_ratio }}</td>
-                    <td>{{ props.item.paytype }}</td>
-                </tr>
+            <template v-slot:item.type="{ item }">
+                <v-chip>{{ item.type }}</v-chip>
             </template>
         </v-data-table-server>
     </v-card>
