@@ -12,7 +12,6 @@
             :items-length="totalItems"
             :items="serverItems"
             class="elevation-1"
-            item-value="type"
             :loading="loading"
             @update:options="loadItems"
         >
