@@ -16,8 +16,8 @@
             :loading="loading"
             @update:options="loadItems"
         >
-            <template v-slot:item="{ item }">
-                <v-chip>{{ item.type }}</v-chip>
+            <template v-slot:item.type="{ item }">
+                <v-chip>{{ item }}</v-chip>
             </template>
         </v-data-table-server>
     </v-card>
