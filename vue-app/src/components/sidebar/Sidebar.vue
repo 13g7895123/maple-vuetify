@@ -24,7 +24,7 @@
         <v-list-item-title>{{ item.text }}</v-list-item-title>
       </v-list-item>
     </v-list-group> -->
-    <v-list density="compact" nav flat class="mt-5" > 
+    <!-- <v-list density="compact" nav flat class="mt-5" > 
       <v-list-item
         v-for="(item, i) in items"
         :key="i"
@@ -39,7 +39,7 @@
         base-color="white"
       >
       </v-list-item> 
-    </v-list>
+    </v-list> -->
     <v-list-group no-action v-for='navLink in items' :key="navLink.text">
       <v-list-item slot='activator' :to="navLink.route">
         <v-list-item-icon>
