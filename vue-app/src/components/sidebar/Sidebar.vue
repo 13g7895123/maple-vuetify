@@ -24,7 +24,7 @@
         <v-list-item-title>{{ item.text }}</v-list-item-title>
       </v-list-item>
     </v-list-group> -->
-    <!-- <v-list density="compact" nav flat class="mt-5" > 
+    <v-list density="compact" nav flat class="mt-5" > 
       <v-list-item
         v-for="(item, i) in items"
         :key="i"
@@ -39,9 +39,8 @@
         base-color="white"
       >
       </v-list-item> 
-    </v-list> -->
-    <!-- <v-list></v-list> -->
-    <v-list-group no-action v-for='navLink in items' :key="navLink.text">
+    </v-list>
+    <!-- <v-list-group no-action v-for='navLink in items' :key="navLink.text">
       <v-list-item slot='activator' :to="navLink.route">
         <v-list-item-icon>
           <v-icon>{{ navLink.icon }}</v-icon>
@@ -52,11 +51,11 @@
         <!-- <v-list-item-title :to="sub.route">{{ sub.text }}</v-list-item-title> -->
         <v-list-item-title>{{ sub.text }}</v-list-item-title>
       </v-list-item>
-    </v-list-group>
+    </v-list-group> -->
     <!-- 登出可以放在這裡 -->
     <div style="position: absolute; bottom: 20px; margin-left: auto; margin-right: auto; left:0; right: 0; text-align: center;">
     </div>
-  </v-list>
+    </v-list>
   </v-navigation-drawer>
 </template>
 <script setup>
