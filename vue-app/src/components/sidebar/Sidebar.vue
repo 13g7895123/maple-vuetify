@@ -48,7 +48,8 @@
         <v-list-item-title>{{ navLink.text }}</v-list-item-title>
       </v-list-item>
       <v-list-item v-for='sub in navLink.subLinks' :key="sub.text">
-        <v-list-item-title :to="sub.route">{{ sub.text }}</v-list-item-title>
+        <!-- <v-list-item-title :to="sub.route">{{ sub.text }}</v-list-item-title> -->
+        <v-list-item-title>{{ sub.text }}</v-list-item-title>
       </v-list-item>
     </v-list-group>
     <!-- 登出可以放在這裡 -->
