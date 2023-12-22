@@ -3,7 +3,8 @@
         :style="{ background: $vuetify.theme.themes.dark.background }"
     >
         <!-- <Sidebar /> -->
-        <Test />
+        <!-- <Test /> -->
+        <Test2 />
         <!-- <Navbar /> -->
         <v-main>
             <v-container class="px-3 mt-2" fluid>
@@ -18,6 +19,7 @@
 import Navbar from '../components/Navbar.vue';
 import Sidebar from '../components/sidebar/Sidebar.vue';
 import Test from '../components/sidebar/Test.vue'
+import Test2 from '../components/sidebar/Test2.vue'
 </script>
 <style>
 html { overflow-y: auto }
