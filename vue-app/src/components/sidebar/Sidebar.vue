@@ -78,6 +78,6 @@ const items =  [
         {text: 'bonus', link: '/test'}
       ]
     },
-    {icon: 'mdi-ab-testing', text: 'test', link: '/test'},
+    // {icon: 'mdi-ab-testing', text: 'test', link: '/test'},
 ]
 </script>
