@@ -47,7 +47,7 @@
   </template>
   <script setup>
 
-  links =  [
+  const links =  [
       {
           to     : '/dashboard',
           icon   : 'mdi-view-dashboard',
