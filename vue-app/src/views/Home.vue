@@ -3,9 +3,6 @@
         :style="{ background: $vuetify.theme.themes.dark.background }"
     >
         <Sidebar />
-        <!-- <Test /> -->
-        <!-- <Test2 /> -->
-        <!-- <Navbar /> -->
         <v-main>
             <v-container class="px-3 mt-2" fluid>
                 <div id='main_area' class="mx-3 px-5 py-5">
