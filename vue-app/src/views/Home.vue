@@ -22,8 +22,7 @@ import Test2 from '../components/sidebar/Test2.vue'
 html { overflow-y: auto }
 #main_area{
     height: 93vh;
-    border: 2px solid rgba(39, 132, 255, .5);
+    border: 4px solid rgba(39, 132, 255, .5);
     border-radius: 20px;
-    box-shadow: 3px 3px #555;
 }
 </style>
