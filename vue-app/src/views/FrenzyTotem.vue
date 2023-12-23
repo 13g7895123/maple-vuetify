@@ -14,7 +14,7 @@
             <v-col cols="12" sm="4">
                 <v-card color="#B49239" class="rounded-xl" height="150">
                     <div class="h-full flex flex-nowrap justify-between">
-                        <div class="flex flex-col items-center">
+                        <div class="h-full flex flex-col items-center">
                             <v-card-title>當月累績(金額/時數)</v-card-title>
                             <v-card-subtitle>6e/6H</v-card-subtitle>
                         </div>
