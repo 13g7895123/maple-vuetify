@@ -6,6 +6,7 @@
                     <div class="d-flex flex-no-wrap justify-space-between">
                         <div>
                             <v-card-title>當日累績(金額/時數)</v-card-title>
+                            <v-card-subtitle>3e/3H</v-card-subtitle>
                         </div>
                     </div>
                 </v-card>
