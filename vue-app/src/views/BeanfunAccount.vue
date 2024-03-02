@@ -88,7 +88,7 @@ const submit = async() =>{
     alert(msg)
 }
 
-const { data: { success, msg } } = await axios.get('http://170.187.229.132:9092/api/bonus')
+// const { data: { success, msg } } = await axios.get('http://170.187.229.132:9092/api/bonus')
 // console.log(test);
 
 </script>
