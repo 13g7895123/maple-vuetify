@@ -67,7 +67,16 @@ const phoneOwner = ref()
 
 /* Enter按鈕 */
 const submit = async() =>{
-    console.log('submit')
+    const formData = ref({
+        'account': account.value,
+        'email': email.value,
+        'phone': phone.value,
+        'phone_owner': phoneOwner.value,
+    })
+    const { data: { success, msg } }  = await axios.post(
+        'http://170.187.229.132:9092/api/beanfun', formData.value
+    )
+    alert(msg)
 }
 
 const { data: { success, msg } } = await axios.get('http://170.187.229.132:9092/api/bonus')
