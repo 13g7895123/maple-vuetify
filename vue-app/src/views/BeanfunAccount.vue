@@ -7,8 +7,8 @@
             :width="400"
             :height="540"
             rounded
-            style="background:rgba(255, 255, 255, 0.9);"
-            class="justify-center align-center"
+            style="background:rgba(255, 255, 255, 0.9);"     
+            class="d-flex flex-column align-center"       
             >
                 <v-form 
                 @submit.prevent
