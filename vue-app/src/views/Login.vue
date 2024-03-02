@@ -66,6 +66,9 @@
 import { useRouter } from "vue-router";
 
 const router = useRouter();
+
+console.log('123');
+
 </script>
 <style>
 html{
