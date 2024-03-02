@@ -18,13 +18,13 @@
                     <v-text-field
                         variant="outlined"
                         label="Account"
-                        height="30px"
                         class="mt-3"
                         style="width: 70%;"
                     ></v-text-field>
                     <v-text-field
                         variant="outlined"
                         label="email"
+                        width="70%"
                     ></v-text-field>
                     <v-text-field
                         variant="outlined"
