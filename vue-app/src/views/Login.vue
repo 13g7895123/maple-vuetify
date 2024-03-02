@@ -69,8 +69,8 @@ import axios from 'axios'
 /* 基本參數 */
 const router = useRouter();
 
-const { data: { success } } = await axios.get('http://170.187.229.132:9092/api/bonus')
-console.log(success);
+// const { data: { success } } = await axios.get('http://170.187.229.132:9092/api/bonus')
+// console.log(success);
 
 </script>
 <style>
