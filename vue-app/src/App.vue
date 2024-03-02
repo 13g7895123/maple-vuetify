@@ -1,9 +1,9 @@
 <template>
   <v-app>
     <v-main>
-      <Suspense>
+      <!-- <Suspense> -->
         <router-view />
-      </Suspense>
+      <!-- </Suspense> -->
     </v-main>
   </v-app>
 </template>
