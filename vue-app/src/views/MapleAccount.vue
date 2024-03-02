@@ -54,24 +54,17 @@ html{
                         style="width: 70%;"
                     ></v-text-field> -->
                     <v-text-field
-                        v-model="email"
+                        v-model="name"
                         variant="outlined"
-                        label="email"
+                        label="name"
                         style="width: 70%;"
                     ></v-text-field>
                     <v-text-field
-                        v-model="phone"
+                        v-model="role"
                         variant="outlined"
-                        label="phone"
+                        label="role"
                         style="width: 70%;"
-                    ></v-text-field>
-                    <v-text-field
-                        v-model="phoneOwner"
-                        variant="outlined"
-                        label="phone owner"
-                        style="width: 70%;"
-                    ></v-text-field>
-                    
+                    ></v-text-field>                    
                 </v-form>     
                 <v-btn type="button" 
                         style="width: 70%; color:#fff;"
@@ -93,17 +86,16 @@ const router = useRouter();
 /* 表格資料 */
 const bfAccount = ref()
 let bfAccountList = ref([])
-const email = ref()
-const phone = ref()
-const phoneOwner = ref()
+const name = ref()
+const role = ref()
 
 /* 測試資料 */
 const testMode = 0
 if (testMode == 1){
-    account.value       = '13g1017895123'
-    email.value         = '13g1017895123'
-    phone.value         = '0930191325'
-    phoneOwner.value    = '大妹男友'
+    // account.value       = '13g1017895123'
+    // email.value         = '13g1017895123'
+    // phone.value         = '0930191325'
+    // phoneOwner.value    = '大妹男友'
 }
 
 /* 載入頁面動作 */
@@ -119,10 +111,9 @@ onMounted(async() => {
 /* Enter按鈕 */
 const submit = async() =>{
     const formData = ref({
-        'account': account.value,
-        'email': email.value,
-        'phone': phone.value,
-        'phone_owner': phoneOwner.value,
+        'bf_account': bfAccount.value,
+        'name': name.value,
+        'role': role.value,
     })
     const { data: { success, msg } }  = await axios.post(
         'http://170.187.229.132:9092/api/beanfun', JSON.stringify(formData.value)
