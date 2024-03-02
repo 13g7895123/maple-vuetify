@@ -100,7 +100,7 @@ if (testMode == 1){
 
 /* 載入頁面動作 */
 onMounted(async() => {
-    const { data: { success, data } }  = await axios.get('http://170.187.229.132:9092/api/mapleaccount');
+    const { data: { success, data } }  = await axios.get('http://170.187.229.132:9092/api/beanfun');
     if (success){
         for (let i = 0; i < data.length; i++){
             bfAccountList.value.push(data[i]['account'])
@@ -116,7 +116,7 @@ const submit = async() =>{
         'role': role.value,
     })
     const { data: { success, msg } }  = await axios.post(
-        'http://170.187.229.132:9092/api/beanfun', JSON.stringify(formData.value)
+        'http://170.187.229.132:9092/api/mapleaccount', JSON.stringify(formData.value)
     )
     alert(success)
 }
