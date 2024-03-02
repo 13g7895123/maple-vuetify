@@ -18,12 +18,6 @@
                 @submit.prevent
                 class="d-flex flex-column align-center justify-center"
                 >
-                    <!-- <v-img
-                        cover
-                        :height="180"
-                        src="../src/assets/login_img.png"
-                        class="mt-5 d-flex justify-center"
-                    ></v-img> -->
                     <v-text-field
                         variant="outlined"
                         label="Account"
@@ -51,30 +45,7 @@
                         style="width: 70%; color:#fff;"
                         color="#4287f5"
                         @click="router.push('/bonus')"
-                    >LOGIN</v-btn>
-                    <!-- divider -->
-                    <div class="d-flex align-center mt-5" style="width: 70%; position: relative;">
-                        <div class="divider-line text-left"></div>
-                        <div class="px-3 text-no-wrap">or login with</div>
-                        <div class="divider-line text-left"></div>
-                    </div>
-                    <div 
-                        class="d-flex justify-space-between"
-                        style="width: 70%;"
-                    >
-                        <v-btn 
-                            type="button" 
-                            class="mt-2"
-                            style="width: 45%; color:#fff;"
-                            color="#d34f41"
-                        >Google</v-btn>
-                        <v-btn 
-                            type="button" 
-                            class="mt-2"
-                            style="width: 45%; color:#fff;"
-                            color="#05c654"
-                        >Line</v-btn>
-                    </div>
+                    >ENTER</v-btn>
                 </v-form>                
             </v-card>
         </v-main>
