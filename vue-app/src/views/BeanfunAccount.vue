@@ -107,7 +107,7 @@ const submit = async() =>{
         'phone_owner': phoneOwner.value,
     })
     const { data: { success, msg } }  = await axios.post(
-        'http://170.187.229.132:9092/api/beanfun', formData.value
+        'http://170.187.229.132:9092/api/beanfun', JSON.stringify(formData.value)
     )
     // const { data: { success } }  = await axios.get(
     //     'http://170.187.229.132:9092/api/beanfun'
