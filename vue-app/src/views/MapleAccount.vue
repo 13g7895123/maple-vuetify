@@ -110,7 +110,7 @@ if (testMode == 1){
 onMounted(async() => {
     const { data: { success, data } }  = await axios.get('http://170.187.229.132:9092/api/beanfun');
     if (success){
-        for (i = 0; i < length(data); i++){
+        for (let i = 0; i < length(data); i++){
             bfAccountList.value.push(data[i]['account'])
         }
     }
