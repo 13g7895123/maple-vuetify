@@ -36,13 +36,14 @@
                         label="phone owner"
                         style="width: 70%;"
                     ></v-text-field>
-                    <v-btn type="button" 
+                    
+                </v-form>     
+                <v-btn type="button" 
                         class="mt-2"
                         style="width: 70%; color:#fff;"
                         color="#4287f5"
                         @click="router.push('/bonus')"
-                    >ENTER</v-btn>
-                </v-form>                
+                    >ENTER</v-btn>           
             </v-card>
         </v-main>
     </v-app>
