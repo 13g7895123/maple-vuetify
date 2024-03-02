@@ -71,7 +71,7 @@ const router = useRouter();
 
 /* 表格資料 */
 const name = ref()
-const price = ref()
+const role = ref()
 
 /* 測試資料 */
 const testMode = 0
