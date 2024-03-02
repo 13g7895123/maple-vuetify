@@ -8,6 +8,11 @@
             rounded
             style="background:rgba(255, 255, 255, 0.9);"
             >
+                <v-card
+                class="mx-auto"
+                max-width="344"
+                title="User Registration">
+                </v-card>
                 <v-form 
                 @submit.prevent
                 class="d-flex flex-column align-center justify-center"
@@ -19,6 +24,7 @@
                         class="mt-5 d-flex justify-center"
                     ></v-img>
                     <v-text-field
+                        variant="outlined"
                         label="Account"
                         height="30px"
                         class="mt-3"
