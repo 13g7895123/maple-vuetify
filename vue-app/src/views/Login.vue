@@ -64,10 +64,13 @@
 </template>
 <script setup>
 import { useRouter } from "vue-router";
+import axios from 'axios'
 
+/* 基本參數 */
 const router = useRouter();
 
-console.log('123');
+const { data: { success } } = await axios.get('http://170.187.229.132:9092/api/bonus')
+console.log(success);
 
 </script>
 <style>
