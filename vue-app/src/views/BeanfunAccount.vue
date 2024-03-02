@@ -2,7 +2,7 @@
     <v-app>
         <v-main id="login_main">
             <v-card
-            title="User Registration"
+            title="Beanfun Account"
             :elevation="6" 
             :width="400"
             :height="540"
@@ -18,12 +18,12 @@
                 @submit.prevent
                 class="d-flex flex-column align-center justify-center"
                 >
-                    <v-img
+                    <!-- <v-img
                         cover
                         :height="180"
                         src="../src/assets/login_img.png"
                         class="mt-5 d-flex justify-center"
-                    ></v-img>
+                    ></v-img> -->
                     <v-text-field
                         variant="outlined"
                         label="Account"
@@ -32,7 +32,8 @@
                         style="width: 70%;"
                     ></v-text-field>
                     <v-text-field
-                        label="Password"
+                        variant="outlined"
+                        label="email"
                         style="width: 70%;"
                     ></v-text-field>
                     <v-btn type="button" 
