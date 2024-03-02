@@ -90,7 +90,7 @@ const phone = ref()
 const phoneOwner = ref()
 
 /* 測試資料 */
-const testMode = 1
+const testMode = 0
 if (testMode == 1){
     account.value       = '13g1017895123'
     email.value         = '13g1017895123'
@@ -109,9 +109,6 @@ const submit = async() =>{
     const { data: { success, msg } }  = await axios.post(
         'http://170.187.229.132:9092/api/beanfun', JSON.stringify(formData.value)
     )
-    // const { data: { success } }  = await axios.get(
-    //     'http://170.187.229.132:9092/api/beanfun'
-    // )
     alert(success)
 }
 
