@@ -66,8 +66,8 @@ const phone = ref()
 const phoneOwner = ref()
 
 /* 測試資料 */
-const testMode = ref(True)
-if (testMode.value){
+const testMode = 1
+if (testMode == 1){
     account.value       = '13g1017895123'
     email.value         = '13g1017895123'
     phone.value         = '0930191325'
