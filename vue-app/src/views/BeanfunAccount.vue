@@ -1,53 +1,52 @@
 <template>
     <v-app>
         <v-main id="login_main">
-            <v-card
-            title="Beanfun Account"
-            :elevation="6" 
-            :width="400"
-            :height="540"
-            rounded
-            style="background:rgba(255, 255, 255, 0.9);"
-            >
-                <!-- <v-card
-                class="mx-auto"
-                max-width="344"
-                title="User Registration">
-                </v-card> -->
-                <v-form 
-                @submit.prevent
-                class="d-flex flex-column align-center justify-center"
+            <v-layout align-center align-content-center>
+
+            
+                <v-card
+                title="Beanfun Account"
+                :elevation="6" 
+                :width="400"
+                :height="540"
+                rounded
+                style="background:rgba(255, 255, 255, 0.9);"
                 >
-                    <v-text-field
-                        variant="outlined"
-                        label="Account"
-                        height="30px"
-                        class="mt-3"
-                        style="width: 70%;"
-                    ></v-text-field>
-                    <v-text-field
-                        variant="outlined"
-                        label="email"
-                        style="width: 70%;"
-                    ></v-text-field>
-                    <v-text-field
-                        variant="outlined"
-                        label="phone"
-                        style="width: 70%;"
-                    ></v-text-field>
-                    <v-text-field
-                        variant="outlined"
-                        label="phone owner"
-                        style="width: 70%;"
-                    ></v-text-field>
-                    <v-btn type="button" 
-                        class="mt-2"
-                        style="width: 70%; color:#fff;"
-                        color="#4287f5"
-                        @click="router.push('/bonus')"
-                    >ENTER</v-btn>
-                </v-form>                
-            </v-card>
+                    <v-form 
+                    @submit.prevent
+                    class="d-flex flex-column align-center justify-center"
+                    >
+                        <v-text-field
+                            variant="outlined"
+                            label="Account"
+                            height="30px"
+                            class="mt-3"
+                            style="width: 70%;"
+                        ></v-text-field>
+                        <v-text-field
+                            variant="outlined"
+                            label="email"
+                            style="width: 70%;"
+                        ></v-text-field>
+                        <v-text-field
+                            variant="outlined"
+                            label="phone"
+                            style="width: 70%;"
+                        ></v-text-field>
+                        <v-text-field
+                            variant="outlined"
+                            label="phone owner"
+                            style="width: 70%;"
+                        ></v-text-field>
+                        <v-btn type="button" 
+                            class="mt-2"
+                            style="width: 70%; color:#fff;"
+                            color="#4287f5"
+                            @click="router.push('/bonus')"
+                        >ENTER</v-btn>
+                    </v-form>                
+                </v-card>
+            </v-layout>
         </v-main>
     </v-app>
 </template>
