@@ -36,6 +36,16 @@
                         label="email"
                         style="width: 70%;"
                     ></v-text-field>
+                    <v-text-field
+                        variant="outlined"
+                        label="phone"
+                        style="width: 70%;"
+                    ></v-text-field>
+                    <v-text-field
+                        variant="outlined"
+                        label="phone owner"
+                        style="width: 70%;"
+                    ></v-text-field>
                     <v-btn type="button" 
                         class="mt-2"
                         style="width: 70%; color:#fff;"
