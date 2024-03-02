@@ -7,11 +7,11 @@
             :width="400"
             :height="540"
             rounded
-            style="background:rgba(255, 255, 255, 0.9);"     
-            class="d-flex flex-column justify-space-around align-center"       
+            style="background:rgba(255, 255, 255, 0.9);"         
             >
                 <v-form 
                 @submit.prevent
+                class="d-flex flex-column align-center justify-center"
                 >
                     <v-text-field
                         variant="outlined"
