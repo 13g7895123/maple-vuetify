@@ -64,7 +64,7 @@
 </template>
 <script setup>
 import { useRouter } from "vue-router";
-import { ref } from 'vue'
+// import { ref } from 'vue'
 import axios from 'axios'
 
 /* 基本參數 */
