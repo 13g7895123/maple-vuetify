@@ -16,22 +16,26 @@
                 style="width: 100%;"
                 >
                     <v-text-field
+                        v-model="account"
                         variant="outlined"
                         label="Account"
                         class="mt-3"
                         style="width: 70%;"
                     ></v-text-field>
                     <v-text-field
+                        v-model="email"
                         variant="outlined"
                         label="email"
                         style="width: 70%;"
                     ></v-text-field>
                     <v-text-field
+                        v-model="phone"
                         variant="outlined"
                         label="phone"
                         style="width: 70%;"
                     ></v-text-field>
                     <v-text-field
+                        v-model="phoneOwner"
                         variant="outlined"
                         label="phone owner"
                         style="width: 70%;"
@@ -39,10 +43,9 @@
                     
                 </v-form>     
                 <v-btn type="button" 
-                        class=""
                         style="width: 70%; color:#fff;"
                         color="#4287f5"
-                        @click="router.push('/bonus')"
+                        @click="submit"
                     >ENTER</v-btn>           
             </v-card>
         </v-main>
@@ -50,13 +53,24 @@
 </template>
 <script setup>
 import { useRouter } from "vue-router";
-// import { ref } from 'vue'
+import { ref } from 'vue'
 import axios from 'axios'
 
 /* 基本參數 */
 const router = useRouter();
 
-const { data: { success, test } } = await axios.get('http://170.187.229.132:9092/api/bonus')
+/* 表格資料 */
+const account = ref()
+const email = ref()
+const phone = ref()
+const phoneOwner = ref()
+
+/* Enter按鈕 */
+const submit = async() =>{
+    console.log('submit')
+}
+
+const { data: { success, msg } } = await axios.get('http://170.187.229.132:9092/api/bonus')
 console.log(test);
 
 </script>
