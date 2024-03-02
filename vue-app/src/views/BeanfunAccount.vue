@@ -1,18 +1,19 @@
 <template>
     <v-app>
         <v-main id="login_main">
-            <v-sheet
+            <v-card
+            title="User Registration"
             :elevation="6" 
             :width="400"
             :height="540"
             rounded
             style="background:rgba(255, 255, 255, 0.9);"
             >
-                <v-card
+                <!-- <v-card
                 class="mx-auto"
                 max-width="344"
                 title="User Registration">
-                </v-card>
+                </v-card> -->
                 <v-form 
                 @submit.prevent
                 class="d-flex flex-column align-center justify-center"
@@ -64,7 +65,7 @@
                         >Line</v-btn>
                     </div>
                 </v-form>                
-            </v-sheet>
+            </v-card>
         </v-main>
     </v-app>
 </template>
