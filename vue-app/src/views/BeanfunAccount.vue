@@ -8,7 +8,7 @@
             :height="540"
             rounded
             style="background:rgba(255, 255, 255, 0.9);"     
-            class="d-flex flex-column justify-space-around"       
+            class="d-flex flex-column justify-space-around align-center"       
             >
                 <v-form 
                 @submit.prevent
@@ -39,7 +39,7 @@
                     
                 </v-form>     
                 <v-btn type="button" 
-                        class="mt-2"
+                        class=""
                         style="width: 70%; color:#fff;"
                         color="#4287f5"
                         @click="router.push('/bonus')"
