@@ -71,7 +71,7 @@ const router = useRouter();
 
 /* 表格資料 */
 const name = ref()
-const role = ref()
+const price = ref()
 
 /* 測試資料 */
 const testMode = 0
@@ -86,7 +86,7 @@ if (testMode == 1){
 const submit = async() =>{
     const formData = ref({
         'name': name.value,
-        'price': role.value,
+        'price': price.value,
     })
     const { data: { success, msg } }  = await axios.post(
         'http://170.187.229.132:9092/api/giftproduct', JSON.stringify(formData.value)
