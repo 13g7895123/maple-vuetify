@@ -26,7 +26,7 @@ html{
     <v-app>
         <v-main id="login_main">
             <v-card
-            title="Beanfun Account"
+            title="Maple Account"
             :elevation="6" 
             :width="400"
             :height="540"
@@ -38,14 +38,21 @@ html{
                 @submit.prevent
                 class="d-flex flex-column align-center justify-center"
                 style="width: 100%;"
-                >
-                    <v-text-field
+                >   
+                    <v-select
+                        label="Beanfun Account"
+                        :items="bfAccountList"
+                        v-model="bfAccount"
+                        variant="outlined"
+                        style="width: 70%;"
+                    ></v-select>
+                    <!-- <v-text-field
                         v-model="account"
                         variant="outlined"
                         label="Account"
                         class="mt-3"
                         style="width: 70%;"
-                    ></v-text-field>
+                    ></v-text-field> -->
                     <v-text-field
                         v-model="email"
                         variant="outlined"
@@ -85,6 +92,7 @@ const router = useRouter();
 
 /* 表格資料 */
 const bfAccount = ref()
+let bfAccountList = ref([])
 const email = ref()
 const phone = ref()
 const phoneOwner = ref()
@@ -102,8 +110,9 @@ if (testMode == 1){
 onMounted(async() => {
     const { data: { success, data } }  = await axios.get('http://170.187.229.132:9092/api/beanfun');
     if (success){
-        console.log(data)
-        bfAccount.value = data
+        for (i = 0; i < length(data); i++){
+            bfAccountList.value.push(data[i]['account'])
+        }
     }
 })
 
