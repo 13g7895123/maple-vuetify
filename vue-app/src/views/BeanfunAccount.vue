@@ -18,6 +18,7 @@
                         variant="outlined"
                         label="Account"
                         height="30px"
+                        width="auto"
                         class="mt-3"
                         style="width: 70%;"
                     ></v-text-field>
