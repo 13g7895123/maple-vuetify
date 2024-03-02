@@ -33,6 +33,11 @@ const routes = [
         name: 'maple',
         component: () => import('../views/MapleAccount.vue'),
     },
+    {
+        path: "/giftproduct",
+        name: 'giftproduct',
+        component: () => import('../views/GiftProduct.vue'),
+    },
     // {
     //     path: '/:catchAll(.*)',
     //     name: '404',
