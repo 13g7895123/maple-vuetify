@@ -13,6 +13,7 @@
                 <v-form 
                 @submit.prevent
                 class="d-flex flex-column align-center justify-center"
+                style="width: 100%;"
                 >
                     <v-text-field
                         variant="outlined"
