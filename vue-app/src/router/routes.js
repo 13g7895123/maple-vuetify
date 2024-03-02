@@ -23,6 +23,11 @@ const routes = [
         name: 'Login',
         component: () => import('../views/Login.vue'),
     },
+    {
+        path: "/beanfun",
+        name: 'beanfun',
+        component: () => import('../views/BeanfunAccount.vue'),
+    },
     // {
     //     path: '/:catchAll(.*)',
     //     name: '404',
