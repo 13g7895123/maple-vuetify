@@ -1,3 +1,27 @@
+<style>
+html{
+    overflow-y: auto;
+}
+#login_main{
+    background-image: url('../assets/christmas_1920_1200.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.divider-line {
+  flex-grow: 1;
+  height: 1px;
+  width: 100%;
+  background-color: #555;  /* 设置横线颜色 */
+}
+.v-img__img{
+    width: auto;
+}
+</style>
 <template>
     <v-app>
         <v-main id="login_main">
@@ -82,37 +106,13 @@ const submit = async() =>{
         'phone': phone.value,
         'phone_owner': phoneOwner.value,
     })
-    const { data: { success, msg } }  = await axios.post(
-        'http://170.187.229.132:9092/api/beanfun', formData.value
+    // const { data: { success, msg } }  = await axios.post(
+    //     'http://170.187.229.132:9092/api/beanfun', formData.value
+    // )
+    const { data: { success } }  = await axios.get(
+        'http://170.187.229.132:9092/api/beanfun'
     )
-    alert(msg)
+    alert(success)
 }
-
-// const { data: { success, msg } } = await axios.get('http://170.187.229.132:9092/api/bonus')
-// console.log(test);
 
 </script>
-<style>
-html{
-    overflow-y: auto;
-}
-#login_main{
-    background-image: url('../assets/christmas_1920_1200.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.divider-line {
-  flex-grow: 1;
-  height: 1px;
-  width: 100%;
-  background-color: #555;  /* 设置横线颜色 */
-}
-.v-img__img{
-    width: auto;
-}
-</style>
