@@ -19,26 +19,19 @@
                         variant="outlined"
                         label="Account"
                         height="30px"
-                        width="400px"
                         class="mt-3"
-                        style="width: 70%;"
                     ></v-text-field>
                     <v-text-field
                         variant="outlined"
                         label="email"
-                        width="400px"
-                        style="width: 70%;"
                     ></v-text-field>
                     <v-text-field
                         variant="outlined"
                         label="phone"
-                        width="400px"
-                        style="width: 70%;"
                     ></v-text-field>
                     <v-text-field
                         variant="outlined"
                         label="phone owner"
-                        width="400px"
                     ></v-text-field>
                     
                 </v-form>     
