@@ -65,6 +65,15 @@ const email = ref()
 const phone = ref()
 const phoneOwner = ref()
 
+/* 測試資料 */
+const testMode = True
+if (testMode){
+    account.value       = '13g1017895123'
+    email.value         = '13g1017895123'
+    phone.value         = '0930191325'
+    phoneOwner.value    = '大妹男友'
+}
+
 /* Enter按鈕 */
 const submit = async() =>{
     const formData = ref({
