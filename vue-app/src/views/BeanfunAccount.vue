@@ -37,7 +37,7 @@
                     <v-text-field
                         variant="outlined"
                         label="phone owner"
-                        width="280px"
+                        width="400px"
                     ></v-text-field>
                     
                 </v-form>     
