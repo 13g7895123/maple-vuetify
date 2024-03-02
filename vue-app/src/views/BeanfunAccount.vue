@@ -71,7 +71,7 @@ const submit = async() =>{
 }
 
 const { data: { success, msg } } = await axios.get('http://170.187.229.132:9092/api/bonus')
-console.log(test);
+// console.log(test);
 
 </script>
 <style>
