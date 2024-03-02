@@ -29,10 +29,12 @@
                     <v-text-field
                         variant="outlined"
                         label="phone"
+                        width="70%"
                     ></v-text-field>
                     <v-text-field
                         variant="outlined"
                         label="phone owner"
+                        style="width: 70%;"
                     ></v-text-field>
                     
                 </v-form>     
