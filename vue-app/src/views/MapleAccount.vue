@@ -100,7 +100,7 @@ if (testMode == 1){
 
 /* 載入頁面動作 */
 onMounted(async() => {
-    const { data: { success, data } }  = await axios.get('http://170.187.229.132:9092/api/beanfun');
+    const { data: { success, data } }  = await axios.get('http://170.187.229.132:9092/api/mapleaccount');
     if (success){
         for (let i = 0; i < data.length; i++){
             bfAccountList.value.push(data[i]['account'])
