@@ -43,6 +43,11 @@ const routes = [
         name: 'giftbuyer',
         component: () => import('../views/GiftBuyer.vue'),
     },
+    {
+        path: "/gift",
+        name: 'gift',
+        component: () => import('../views/Gift.vue'),
+    },
     // {
     //     path: '/:catchAll(.*)',
     //     name: '404',
