@@ -102,7 +102,7 @@ onMounted(async() => {
 /* 選擇賣家 */
 const buyerChange = () => {
     console.log(buyer.value)
-    const index = buyerList.indexOf(buyer.value)
+    const index = buyerList.value.indexOf(buyer.value)
     discount.value = discountList[index]
 }
 
