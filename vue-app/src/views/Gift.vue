@@ -43,7 +43,7 @@ html{
                         label="Buyer"
                         :items="buyerList"
                         v-model="buyer"
-                        @change="buyerChange"
+                        @update:modelValue="buyerChange"
                         variant="outlined"
                         style="width: 70%;"
                     ></v-select>
