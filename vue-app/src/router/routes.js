@@ -38,6 +38,11 @@ const routes = [
         name: 'giftproduct',
         component: () => import('../views/GiftProduct.vue'),
     },
+    {
+        path: "/giftbuyer",
+        name: 'giftbuyer',
+        component: () => import('../views/GiftBuyer.vue'),
+    },
     // {
     //     path: '/:catchAll(.*)',
     //     name: '404',
