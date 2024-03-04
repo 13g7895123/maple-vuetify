@@ -91,7 +91,7 @@ onMounted(async() => {
     const { data: { success, data } }  = await axios.get('http://170.187.229.132:9092/api/giftbuyer');
     if (success){
         for (let i = 0; i < data.length; i++){
-            buyerList.value.push(data[i]['account'])
+            buyerList.value.push(data[i]['buyer_name'])
         }
     }
 })
