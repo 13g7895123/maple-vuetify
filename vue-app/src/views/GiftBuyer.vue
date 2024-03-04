@@ -26,7 +26,7 @@ html{
     <v-app>
         <v-main id="login_main">
             <v-card
-            title="Gift Product"
+            title="Gift Buyer"
             :elevation="6" 
             :width="400"
             :height="540"
