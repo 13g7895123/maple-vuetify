@@ -39,12 +39,13 @@ html{
                 class="d-flex flex-column align-center justify-center"
                 style="width: 100%;"
                 >   
-                    <v-text-field
+                    <v-select
+                        label="Buyer"
+                        :items="buyerList"
                         v-model="buyer"
                         variant="outlined"
-                        label="buyer"
                         style="width: 70%;"
-                    ></v-text-field>
+                    ></v-select>
                     <v-text-field
                         v-model="discount"
                         variant="outlined"
@@ -63,7 +64,7 @@ html{
 </template>
 <script setup>
 import { useRouter } from "vue-router";
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import axios from 'axios'
 
 /* 基本參數 */
@@ -71,6 +72,7 @@ const router = useRouter();
 
 /* 表格資料 */
 const buyer = ref()
+let buyerList = ref([])
 const product = ref()
 const number = ref([])
 const discount = ref([])
@@ -82,6 +84,21 @@ if (testMode == 1){
     // email.value         = '13g1017895123'
     // phone.value         = '0930191325'
     // phoneOwner.value    = '大妹男友'
+}
+
+/* 載入頁面動作 */
+onMounted(async() => {
+    const { data: { success, data } }  = await axios.get('http://170.187.229.132:9092/api/buyer');
+    if (success){
+        for (let i = 0; i < data.length; i++){
+            buyerList.value.push(data[i]['account'])
+        }
+    }
+})
+
+/* Next按鈕 */
+const next = async() =>{
+    
 }
 
 /* Enter按鈕 */
