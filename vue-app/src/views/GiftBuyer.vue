@@ -39,6 +39,13 @@ html{
                 class="d-flex flex-column align-center justify-center"
                 style="width: 100%;"
                 >   
+                    <v-select
+                        label="Buyer"
+                        :items="buyerList"
+                        v-model="buyer"
+                        variant="outlined"
+                        style="width: 70%;"
+                    ></v-select>
                     <v-text-field
                         v-model="name"
                         variant="outlined"
@@ -52,11 +59,12 @@ html{
                         style="width: 70%;"
                     ></v-text-field>                    
                 </v-form>     
-                <v-btn type="button" 
-                        style="width: 70%; color:#fff;"
-                        color="#4287f5"
-                        @click="submit"
-                    >ENTER</v-btn>           
+                <v-btn 
+                    type="button" 
+                    style="width: 70%; color:#fff;"
+                    color="#4287f5"
+                    @click="next"
+                >NEXT</v-btn>           
             </v-card>
         </v-main>
     </v-app>
@@ -70,7 +78,8 @@ import axios from 'axios'
 const router = useRouter();
 
 /* 表格資料 */
-const name = ref()
+const buyer = ref()
+let buyerList = ref([])
 const discount = ref()
 
 /* 測試資料 */
@@ -80,6 +89,21 @@ if (testMode == 1){
     // email.value         = '13g1017895123'
     // phone.value         = '0930191325'
     // phoneOwner.value    = '大妹男友'
+}
+
+/* 載入頁面動作 */
+onMounted(async() => {
+    const { data: { success, data } }  = await axios.get('http://170.187.229.132:9092/api/buyer');
+    if (success){
+        for (let i = 0; i < data.length; i++){
+            buyerList.value.push(data[i]['buyer_name'])
+        }
+    }
+})
+
+/* Next按鈕 */
+const next = async() =>{
+    
 }
 
 /* Enter按鈕 */
