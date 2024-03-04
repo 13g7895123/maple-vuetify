@@ -57,8 +57,8 @@ html{
                 <v-btn type="button" 
                         style="width: 70%; color:#fff;"
                         color="#4287f5"
-                        @click="submit"
-                    >ENTER</v-btn>           
+                        @click="next"
+                    >NEXT</v-btn>           
             </v-card>
         </v-main>
     </v-app>
