@@ -43,6 +43,7 @@ html{
                         label="Buyer"
                         :items="buyerList"
                         v-model="buyer"
+                        @change="buyerChange"
                         variant="outlined"
                         style="width: 70%;"
                     ></v-select>
@@ -73,9 +74,10 @@ const router = useRouter();
 /* 表格資料 */
 const buyer = ref()
 let buyerList = ref([])
+const discount = ref([])
+let discountList = ref([])
 const product = ref()
 const number = ref([])
-const discount = ref([])
 
 /* 測試資料 */
 const testMode = 0
@@ -92,9 +94,16 @@ onMounted(async() => {
     if (success){
         for (let i = 0; i < data.length; i++){
             buyerList.value.push(data[i]['buyer_name'])
+            discountList.value.push(data[i]['discount'])
         }
     }
 })
+
+/* 選擇賣家 */
+const buyerChange = () => {
+    const index = buyerList.indexOf(buyer.value)
+    discount.value = discountList[index]
+}
 
 /* Next按鈕 */
 const next = async() =>{
