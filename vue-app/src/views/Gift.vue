@@ -56,7 +56,7 @@ html{
                 </v-form>     
                 <v-btn type="button" 
                         style="width: 70%; color:#fff;"
-                        color="#4287f5"
+                        color="#6CCF70"
                         @click="next"
                     >NEXT</v-btn>           
             </v-card>
