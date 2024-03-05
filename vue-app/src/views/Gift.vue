@@ -26,17 +26,15 @@ html{
     <v-app>
         <v-main id="login_main">
             <v-card
+            title="Gift"
+            subtitle="Buyer info"
             :elevation="6" 
             :width="400"
             :height="540"
             rounded
             style="background:rgba(255, 255, 255, 0.9);"     
             class="d-flex flex-column justify-space-around align-center"       
-            >
-                <div>
-                    <v-card-title>Gift</v-card-title>
-                    <v-card-subtitle>Buyer info</v-card-subtitle>
-                </div>                
+            >          
                 <v-form 
                 @submit.prevent
                 class="d-flex flex-column align-center justify-center"
