@@ -33,8 +33,10 @@ html{
             style="background:rgba(255, 255, 255, 0.9);"     
             class="d-flex flex-column justify-space-around align-center"       
             >
-                <v-card-title>Gift</v-card-title>
-                <v-card-subtitle>Buyer info</v-card-subtitle>
+                <div>
+                    <v-card-title>Gift</v-card-title>
+                    <v-card-subtitle>Buyer info</v-card-subtitle>
+                </div>                
                 <v-form 
                 @submit.prevent
                 class="d-flex flex-column align-center justify-center"
