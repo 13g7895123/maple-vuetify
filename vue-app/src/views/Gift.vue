@@ -33,7 +33,7 @@ html{
             :height="540"
             rounded
             style="background:rgba(255, 255, 255, 0.9);"     
-            class="d-flex flex-column justify-space-around align-center"       
+            class="d-flex flex-column justify-space-around align-center text-center"       
             >          
                 <v-form 
                 @submit.prevent
