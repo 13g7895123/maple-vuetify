@@ -41,6 +41,7 @@ html{
                 style="width: 100%;"
                 >   
                     <v-select
+                        v-show="!showProduct"
                         label="Buyer"
                         :items="buyerList"
                         v-model="buyer"
@@ -49,25 +50,26 @@ html{
                         style="width: 70%;"
                     ></v-select>
                     <v-text-field
+                        v-show="!showProduct"
                         v-model="discount"
                         variant="outlined"
                         label="discount"
                         style="width: 70%;"
-                    ></v-text-field>   
-                    <v-text-field
-                        v-show="showProduct"
-                        v-model="product"
-                        variant="outlined"
-                        label="product"
-                        style="width: 70%;"
-                    ></v-text-field> 
-                    <v-text-field
-                        v-show="showProduct"
-                        v-model="number"
-                        variant="outlined"
-                        label="number"
-                        style="width: 70%;"
-                    ></v-text-field>    
+                    ></v-text-field>  
+                    <div v-show="showProduct">
+                        <v-text-field
+                            v-model="product"
+                            variant="outlined"
+                            label="product"
+                            style="width: 70%;"
+                        ></v-text-field> 
+                        <v-text-field
+                            v-model="number"
+                            variant="outlined"
+                            label="number"
+                            style="width: 70%;"
+                        ></v-text-field>    
+                    </div>
                 </v-form>     
                 <v-btn type="button" 
                         style="width: 70%; color:#fff;"
@@ -94,15 +96,6 @@ const discount = ref([])
 let discountList = ref([])
 const product = ref()
 const number = ref([])
-
-/* 測試資料 */
-const testMode = 0
-if (testMode == 1){
-    // account.value       = '13g1017895123'
-    // email.value         = '13g1017895123'
-    // phone.value         = '0930191325'
-    // phoneOwner.value    = '大妹男友'
-}
 
 /* 載入頁面動作 */
 onMounted(async() => {
