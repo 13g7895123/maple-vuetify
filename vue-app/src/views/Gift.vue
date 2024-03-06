@@ -84,7 +84,7 @@ import { onMounted, ref } from 'vue'
 import axios from 'axios'
 
 /* 基本參數 */
-let showProduct = ref(False)
+let showProduct = ref(false)
 const router = useRouter();
 
 /* 表格資料 */
@@ -124,7 +124,7 @@ const buyerChange = () => {
 
 /* Next按鈕 */
 const next = async() =>{
-    showProduct.value = True
+    showProduct.value = true
 }
 
 /* Enter按鈕 */
