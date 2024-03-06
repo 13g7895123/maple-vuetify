@@ -53,7 +53,21 @@ html{
                         variant="outlined"
                         label="discount"
                         style="width: 70%;"
-                    ></v-text-field>                    
+                    ></v-text-field>   
+                    <v-text-field
+                        v-show="showProduct"
+                        v-model="product"
+                        variant="outlined"
+                        label="product"
+                        style="width: 70%;"
+                    ></v-text-field> 
+                    <v-text-field
+                        v-show="showProduct"
+                        v-model="number"
+                        variant="outlined"
+                        label="number"
+                        style="width: 70%;"
+                    ></v-text-field>    
                 </v-form>     
                 <v-btn type="button" 
                         style="width: 70%; color:#fff;"
@@ -70,6 +84,7 @@ import { onMounted, ref } from 'vue'
 import axios from 'axios'
 
 /* 基本參數 */
+let showProduct = ref(False)
 const router = useRouter();
 
 /* 表格資料 */
@@ -109,7 +124,7 @@ const buyerChange = () => {
 
 /* Next按鈕 */
 const next = async() =>{
-
+    showProduct.value = True
 }
 
 /* Enter按鈕 */
