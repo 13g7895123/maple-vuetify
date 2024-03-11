@@ -27,14 +27,25 @@ html{
         <v-main id="login_main">
             <v-card
             title="Gift"
-            subtitle="Buyer info"
             :elevation="6" 
             :width="400"
             :height="540"
             rounded
             style="background:rgba(255, 255, 255, 0.9);"     
             class="d-flex flex-column justify-space-around align-center text-center"       
-            >          
+            >      
+                <v-tabs
+                v-model="tab"
+                style="width: 100%;"
+                >
+                    <v-tab value="0" style="width: 50%;">
+                        <v-icon>mdi-alpha-b-box</v-icon>
+                    </v-tab>
+
+                    <v-tab value="1" style="width: 50%;">
+                        <v-icon>mdi-alpha-p-box</v-icon>
+                    </v-tab>
+                </v-tabs>         
                 <v-form 
                 @submit.prevent
                 class="d-flex flex-column align-center justify-center"
@@ -94,6 +105,7 @@ const buyer = ref()
 let buyerList = ref([])
 const discount = ref([])
 let discountList = ref([])
+const tab = ref()
 const product = ref()
 const number = ref([])
 
