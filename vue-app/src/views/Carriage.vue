@@ -120,7 +120,7 @@ const submit = async() =>{
     console.log(tab.value)
     const formData = ref({
         'type': tab.value,
-        'buproducter': product.value,
+        'product': product.value,
         'serialNumber': serialNumber.value,
         'price': price.value,
         'line': line.value,
