@@ -27,7 +27,6 @@ html{
         <v-main id="login_main">
             <v-card
             title="Gift"
-            subtitle="Buyer info"
             :elevation="6" 
             :width="400"
             :height="540"
@@ -44,7 +43,7 @@ html{
                     </v-tab>
 
                     <v-tab value="1" style="width: 50%;">
-                        <v-icon>mdi-alpha-s-box</v-icon>
+                        <v-icon>mdi-alpha-p-box</v-icon>
                     </v-tab>
                 </v-tabs>         
                 <v-form 
